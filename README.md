@@ -17,8 +17,9 @@
 
 [Notes](https://www.notion.so/Notes-f08b664bf8d5454cb6900b4e88405c9c?pvs=21)
 
-    
-## Matériel à disposition
+---
+
+## Matériel nécéssaire
 
 - 1 x Poste de travail
 - 1 x Raspberry Pi
@@ -119,3 +120,31 @@ Mise en place simplifiée d’un projet web (frontend et backend) pour jouer au 
 - Autre
     - Matériel / périphériques
     - Câblage
+
+---
+
+## Budget approximatif
+
+| Matériel | Quantité | Prix unitaire | Prix Total | Liens d'achat |
+| --- | --- | --- | --- | --- |
+| Cisco Switch | 1 | 38,70 CHF | 38,70 CHF | [https://www.digitec.ch/fr/s1/product/cisco-switch-cbs110-5t-d-eu-5-port-5-ports-switch-reseau-14672632](https://www.digitec.ch/fr/s1/product/cisco-switch-cbs110-5t-d-eu-5-port-5-ports-switch-reseau-14672632) |
+| Raspberry Pi | 1 | 60,95 CHF | 60,95 CHF | [https://www.digitec.ch/fr/s1/product/raspberry-pi-3-b-essentials-kit-1-gbram-carte-de-developpement-kit-36577688](https://www.digitec.ch/fr/s1/product/raspberry-pi-3-b-essentials-kit-1-gbram-carte-de-developpement-kit-36577688) |
+| Clavier | 1 | 11,20 CHF | 11,20 CHF | [https://www.digitec.ch/fr/s1/product/hp-125-de-filaire-clavier-21427814?tagIds=77-529](https://www.digitec.ch/fr/s1/product/hp-125-de-filaire-clavier-21427814?tagIds=77-529) |
+| Souris | 1 | 8,70 CHF | 8,70 CHF | [https://www.digitec.ch/fr/s1/product/hp-150-usb-avec-cable-noir-filaire-souris-15841186?tagIds=77-529](https://www.digitec.ch/fr/s1/product/hp-150-usb-avec-cable-noir-filaire-souris-15841186?tagIds=77-529) |
+| Cable HDMI | 1 | 17,00 CHF | 17,00 CHF | [https://www.digitec.ch/fr/s1/product/digitec-hdmi-hdmi-20-1-m-hdmi-cable-video-14594435](https://www.digitec.ch/fr/s1/product/digitec-hdmi-hdmi-20-1-m-hdmi-cable-video-14594435) |
+| Cable RJ45 | 2 | 13,30 CHF | 26,60 CHF | [https://www.digitec.ch/fr/s1/product/digitec-cable-reseau-ethernet-rj45-sftp-cat6a-1-m-cable-reseau-12118164](https://www.digitec.ch/fr/s1/product/digitec-cable-reseau-ethernet-rj45-sftp-cat6a-1-m-cable-reseau-12118164) |
+| Carte micro SD | 1 | 6,70 CHF | 6,70 CHF | [https://www.digitec.ch/fr/s1/product/intenso-carte-microsdhc-32-go-avec-adaptateur-sd-classe-10-microsd-32-go-u1-carte-memoire-8396356](https://www.digitec.ch/fr/s1/product/intenso-carte-microsdhc-32-go-avec-adaptateur-sd-classe-10-microsd-32-go-u1-carte-memoire-8396356) |
+| Adaptateur micro SD vers USB | 1 | 13,70 CHF | 13,70 CHF | [https://www.digitec.ch/fr/s1/product/hama-lecteur-de-cartes-sdmicrosd-usb-30-argent-usb-30-lecteur-de-carte-memoire-2585992](https://www.digitec.ch/fr/s1/product/hama-lecteur-de-cartes-sdmicrosd-usb-30-argent-usb-30-lecteur-de-carte-memoire-2585992) |
+| Cable pour Phidget (3003_0) | 6 | 1,50 CHF | 9,00 CHF | [https://www.phidgets.com/?prodid=153](https://www.phidgets.com/?prodid=153) |
+| Cable pour Phidget HUB (3036_0) | 1 | 3,50 CHF | 3,50 CHF | [https://www.phidgets.com/?prodid=186](https://www.phidgets.com/?prodid=186) |
+| Phidget HUB (HUB0000_0) | 1 | 30,00 CHF | 30,00 CHF | [https://www.phidgets.com/?prodid=1288](https://www.phidgets.com/?prodid=1288) |
+| Phidget Thumbstick (HIN1100\_0) | 1 | 20,00 CHF | 20,00 CHF | [https://www.phidgets.com/?prodid=962](https://www.phidgets.com/?prodid=962) |
+| Phidget température (TMP1000\_0) | 1 | 15,00 CHF | 15,00 CHF | [https://www.phidgets.com/?prodid=724](https://www.phidgets.com/?prodid=724) |
+| Phidget distance (DST1001\_0) | 1 | 30,00 CHF | 30,00 CHF | [https://www.phidgets.com/?prodid=1148](https://www.phidgets.com/?prodid=1148) |
+| Phidget son (SND1000\_0) | 1 | 15,00 CHF | 15,00 CHF | [https://www.phidgets.com/?prodid=972](https://www.phidgets.com/?prodid=972) |
+| Phidget Lumière (LUX1000\_0) | 1 | 12,00 CHF | 12,00 CHF | [https://www.phidgets.com/?prodid=707](https://www.phidgets.com/?prodid=707) |
+| Phidget Slider (POT2001\_0) | 1 | 11,00 CHF | 11,00 CHF | [https://www.phidgets.com/?prodid=1231](https://www.phidgets.com/?prodid=1231) |
+
+Prix total par poste : 329,05 CHF
+
+Prix total pour 25 postes : 8 226,25 CHF
