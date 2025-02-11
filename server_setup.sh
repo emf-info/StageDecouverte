@@ -14,7 +14,8 @@ sudo apt update && sudo apt upgrade -y
 # Étape 2 : Installation des outils nécessaires
 echo "Installation de curl et wget..."
 sudo apt install -y curl wget unzip build-essential
-sudo apt install npm
+echo "Installation de npm sans suppression de paquets..."
+sudo apt install -y npm --no-install-recommends
 
 # Étape 3 : Création du répertoire du projet
 echo "Création du répertoire du projet..."
@@ -31,9 +32,14 @@ fi
 # Étape 5 : Installation de Node.js et npm
 echo "Installation de Node.js (version LTS) et npm..."
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt install -y nodejs
+sudo apt install -y nodejs --no-install-recommends
+
+# Empêcher la suppression automatique des paquets
+echo "Désactivation de la suppression automatique des paquets..."
+echo "APT::Keep-Downloaded-Packages "1";" | sudo tee /etc/apt/apt.conf.d/02keep-packages
 
 # Vérification de l'installation de Node.js et npm
+sudo apt install -y npm --no-install-recommends
 if ! command -v node &>/dev/null; then
     echo "Erreur : Node.js n'est pas installé."
     exit 1
@@ -67,7 +73,6 @@ echo "Installation des dépendances Node.js..."
 cd "$PROJECT_PATH"
 npm install express cors
 npm install phidget22
-
 
 # Étape 8 : Lancement du serveur Node.js
 echo "Démarrage du serveur Node.js..."
