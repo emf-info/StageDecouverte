@@ -54,6 +54,8 @@ echo "npm version: $(npm -v)"
 # Étape 6 : Lancement du serveur Phidget (si requis)
 curl -fsSL https://www.phidgets.com/downloads/setup_linux | bash -
 apt install -y libphidget22
+apt install -y phidget22admin
+apt install -y phidget22networkserver
 echo "Vérification de Phidget..."
 if command -v phidget22networkserver &>/dev/null; then
     echo "Démarrage du serveur Phidget sur le port 5661..."
