@@ -52,6 +52,8 @@ echo "Node.js version: $(node -v)"
 echo "npm version: $(npm -v)"
 
 # Étape 6 : Lancement du serveur Phidget (si requis)
+echo "Installation du serveur Phidget..."
+sudo apt install -y phidget22networkserver
 echo "Vérification de Phidget..."
 if command -v phidget22networkserver &>/dev/null; then
     echo "Démarrage du serveur Phidget sur le port 5661..."
