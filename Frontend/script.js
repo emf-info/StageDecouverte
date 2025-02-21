@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function updateJoystickDirection() {
-        fetch('http://localhost:3000/api/joystick')
+        fetch('http://XXX.XXX.XXX.XXX:3000/api/joystick')
             .then((response) => response.json())
             .then(({ x, y }) => {
                 if (Math.abs(x) > Math.abs(y)) {
