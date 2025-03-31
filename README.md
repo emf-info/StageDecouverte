@@ -234,7 +234,7 @@ Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les ut
 
 Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.
 
-[🎞️ Vidéo pour un exercice d'exemple](consigne_ressources/Stage_dcouverte.mp4)
+[🎞️ Vidéo pour un exercice d'exemple](consigne_ressources/Stage_découverte.mp4)
 
 Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !
 
