@@ -1,150 +1,695 @@
-# Activité Stage découverte
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Consignes</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-# Atelier de découverte informaticien
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-| **Titre** | Atelier de découverte du métier d'informaticien |
-| --- | --- |
-| **Objectifs** | Découvrir les bases du métier d'informaticien : installation de système, programmation et mise en réseau avec des Phidgets. |
-| **Durée** | ½ journée (environ 3h30) |
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
----
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-# Fichiers liés au projet
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
-[Documentation technique de projet](https://www.notion.so/Documentation-technique-de-projet-26f71cbfab8b44e58083f90d9f7144ed?pvs=21)
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-[Consigne](https://www.notion.so/Consigne-173cbd3eaf7f803ab94bce0850450817?pvs=21)
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-[Notes](https://www.notion.so/Notes-f08b664bf8d5454cb6900b4e88405c9c?pvs=21)
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
----
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-## Matériel nécéssaire
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-- 1 x Poste de travail
-- 1 x Raspberry Pi
-- 1 x Alimentation du Raspberry Pi
-- 1 x Switch
-- 1 x Alimentation du Switch
-- 1 x Clé USB avec le script d’installation setup.sh et le dossier du client web
-- 1 x Clavier
-- 1 x Souris
-- 1 x Ecran
-- 1 x Cable HDMI
-- 2 x cable RJ45
-- 1 x Carte micro SD de 16GB (minimum)
-- 1 x Adaptateur micro SD vers USB
-- 6 x Cable pour Phidget (3003_0)
-- 1 x Cable pour Phidget HUB (3036_0)
-- 1 x Phidget HUB (HUB0000_0)
-- 1 x Phidget Thumbstick (HIN1100\_0)
-- 1 x Phidget température (TMP1000\_0)
-- 1 x Phidget distance (DST1001\_0)
-- 1 x Phidget son (SND1000\_0)
-- 1 x Phidget Lumière (LUX1000\_0)
-- 1 x Phidget Slider (POT2001\_0)
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
----
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
 
-## Les étapes de l’activité
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
 
-### 1. Préparation de la carte SD
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
 
-Formatage et installation de Raspberry Pi OS sur la carte SD qui fera office de stockage principal pour le Raspberry Pi.
+mark {
+	background-color: transparent;
+}
 
-**Objectif :**
+.indented {
+	padding-left: 1.5em;
+}
 
-- Apprendre a installer un OS sur une carte SD.
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
 
-### 2. Branchement du matériel
+img {
+	max-width: 100%;
+}
 
-Brancher l’alimentations du switch et les cables RJ45 ainsi que tout les périphériques du raspberry PI ( clavier, souris, écran ). On ne connecte pas pour l’instant le Raspberry Pi au switch.
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
 
-Objectif :
+@page {
+	margin: 1in;
+}
 
-- Découvrir les différents types de cables et périphériques ainsi que leur utilités.
+.collection-content {
+	font-size: 0.875rem;
+}
 
-### 3. Configuration initiale du Raspberry Pi
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
 
-Premier démarrage et configuration de base de l’OS.
+.column {
+	padding: 0 1em;
+}
 
-**Objectifs :**
+.column:first-child {
+	padding-left: 0;
+}
 
-- Apprendre a effectuer la configuration de base d’un OS.
+.column:last-child {
+	padding-right: 0;
+}
 
-### 4. Connexion a internet
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
 
-Test de connexion au début et a la fin de cette étape. Connection du raspberry Pi au switch (connexion a internet).
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
 
-**Objectif :**
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
 
-- Comprendre comment lier un ordinateur a internet.
-- Découvrir des tests de base avec un navigateur et la ligne de commande windows.
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
 
-### 5. Créer un programme blockly
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
 
-Créer un programme simple pour tester les phidgets mis a disposition sur le site Phidget.
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
 
-**Objectif :**
+table {
+	border-left: none;
+	border-right: none;
+}
 
-- Réaliser et personnaliser un programme simple avec des bloc d’actions.
-- Comprendre simplement la logique d’un programme.
-- Tester les Phidgets.
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
 
-### 6. Mise en place du jeu snake
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
 
-Mise en place simplifiée d’un projet web (frontend et backend) pour jouer au jeux Snake. Modification de code.
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
 
-**Objectifs :**
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
 
-- Modifications de code CSS et JS
-- Découverte d’actions simple en ligne de commande linux
-- Comprendre l’utilité et l’exécution d’un script linux
-- Comprendre l’importance de la connexion réseau entre deux appareils
+ul > li {
+	list-style: disc;
+}
 
----
+ul.to-do-list {
+	padding-inline-start: 0;
+}
 
-## Thèmes découverts durant l’exercice
+ul.to-do-list > li {
+	list-style: none;
+}
 
-- Système
-    - Système d’exploitation
-        - Installation
-        - Configuration
-    - Ligne de commande windows et linux
-- Réseau
-    - Connexion a internet
-    - Communication entre les appareils
-- Développement
-    - Logique de code simple
-    - Modification de code
-- Autre
-    - Matériel / périphériques
-    - Câblage
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
 
----
+ul.toggle > li {
+	list-style: none;
+}
 
-## Budget approximatif
+ul {
+	padding-inline-start: 1.7em;
+}
 
-| Matériel | Quantité | Prix unitaire | Prix Total | Liens d'achat |
-| --- | --- | --- | --- | --- |
-| Cisco Switch | 1 | 38,70 CHF | 38,70 CHF | [https://www.digitec.ch/fr/s1/product/cisco-switch-cbs110-5t-d-eu-5-port-5-ports-switch-reseau-14672632](https://www.digitec.ch/fr/s1/product/cisco-switch-cbs110-5t-d-eu-5-port-5-ports-switch-reseau-14672632) |
-| Raspberry Pi | 1 | 60,95 CHF | 60,95 CHF | [https://www.digitec.ch/fr/s1/product/raspberry-pi-3-b-essentials-kit-1-gbram-carte-de-developpement-kit-36577688](https://www.digitec.ch/fr/s1/product/raspberry-pi-3-b-essentials-kit-1-gbram-carte-de-developpement-kit-36577688) |
-| Clavier | 1 | 11,20 CHF | 11,20 CHF | [https://www.digitec.ch/fr/s1/product/hp-125-de-filaire-clavier-21427814?tagIds=77-529](https://www.digitec.ch/fr/s1/product/hp-125-de-filaire-clavier-21427814?tagIds=77-529) |
-| Souris | 1 | 8,70 CHF | 8,70 CHF | [https://www.digitec.ch/fr/s1/product/hp-150-usb-avec-cable-noir-filaire-souris-15841186?tagIds=77-529](https://www.digitec.ch/fr/s1/product/hp-150-usb-avec-cable-noir-filaire-souris-15841186?tagIds=77-529) |
-| Cable HDMI | 1 | 17,00 CHF | 17,00 CHF | [https://www.digitec.ch/fr/s1/product/digitec-hdmi-hdmi-20-1-m-hdmi-cable-video-14594435](https://www.digitec.ch/fr/s1/product/digitec-hdmi-hdmi-20-1-m-hdmi-cable-video-14594435) |
-| Cable RJ45 | 2 | 13,30 CHF | 26,60 CHF | [https://www.digitec.ch/fr/s1/product/digitec-cable-reseau-ethernet-rj45-sftp-cat6a-1-m-cable-reseau-12118164](https://www.digitec.ch/fr/s1/product/digitec-cable-reseau-ethernet-rj45-sftp-cat6a-1-m-cable-reseau-12118164) |
-| Carte micro SD | 1 | 6,70 CHF | 6,70 CHF | [https://www.digitec.ch/fr/s1/product/intenso-carte-microsdhc-32-go-avec-adaptateur-sd-classe-10-microsd-32-go-u1-carte-memoire-8396356](https://www.digitec.ch/fr/s1/product/intenso-carte-microsdhc-32-go-avec-adaptateur-sd-classe-10-microsd-32-go-u1-carte-memoire-8396356) |
-| Adaptateur micro SD vers USB | 1 | 13,70 CHF | 13,70 CHF | [https://www.digitec.ch/fr/s1/product/hama-lecteur-de-cartes-sdmicrosd-usb-30-argent-usb-30-lecteur-de-carte-memoire-2585992](https://www.digitec.ch/fr/s1/product/hama-lecteur-de-cartes-sdmicrosd-usb-30-argent-usb-30-lecteur-de-carte-memoire-2585992) |
-| Cable pour Phidget (3003_0) | 6 | 1,50 CHF | 9,00 CHF | [https://www.phidgets.com/?prodid=153](https://www.phidgets.com/?prodid=153) |
-| Cable pour Phidget HUB (3036_0) | 1 | 3,50 CHF | 3,50 CHF | [https://www.phidgets.com/?prodid=186](https://www.phidgets.com/?prodid=186) |
-| Phidget HUB (HUB0000_0) | 1 | 30,00 CHF | 30,00 CHF | [https://www.phidgets.com/?prodid=1288](https://www.phidgets.com/?prodid=1288) |
-| Phidget Thumbstick (HIN1100\_0) | 1 | 20,00 CHF | 20,00 CHF | [https://www.phidgets.com/?prodid=962](https://www.phidgets.com/?prodid=962) |
-| Phidget température (TMP1000\_0) | 1 | 15,00 CHF | 15,00 CHF | [https://www.phidgets.com/?prodid=724](https://www.phidgets.com/?prodid=724) |
-| Phidget distance (DST1001\_0) | 1 | 30,00 CHF | 30,00 CHF | [https://www.phidgets.com/?prodid=1148](https://www.phidgets.com/?prodid=1148) |
-| Phidget son (SND1000\_0) | 1 | 15,00 CHF | 15,00 CHF | [https://www.phidgets.com/?prodid=972](https://www.phidgets.com/?prodid=972) |
-| Phidget Lumière (LUX1000\_0) | 1 | 12,00 CHF | 12,00 CHF | [https://www.phidgets.com/?prodid=707](https://www.phidgets.com/?prodid=707) |
-| Phidget Slider (POT2001\_0) | 1 | 11,00 CHF | 11,00 CHF | [https://www.phidgets.com/?prodid=1231](https://www.phidgets.com/?prodid=1231) |
+ul > li {
+	padding-left: 0.1em;
+}
 
-Prix total par poste : 329,05 CHF
+ol {
+	padding-inline-start: 1.6em;
+}
 
-Prix total pour 25 postes : 8 226,25 CHF
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="173cbd3e-af7f-803a-b94b-ce0850450817" class="page sans"><header><img class="page-cover-image" src="ecole-des-metiers-fribourg--emf.jpg" style="object-position:center 90.82000000000001%"/><h1 class="page-title">Consignes</h1><p class="page-description"></p></header><div class="page-body"><h1 id="173cbd3e-af7f-8003-9fe7-fd3732665f16" class="">💻 Atelier de découverte : <br/>Deviens un As de l&#x27;informatique avec ton <br/>Raspberry Pi !<br/></h1><table id="173cbd3e-af7f-8068-a4ee-c70d7b290753" class="simple-table"><tbody><tr id="f114eb78-9b27-4993-a021-a3e31a5ef1d4"><td id="rrRC" class="" style="width:115px"><strong>Titre</strong></td><td id="sLzp" class="" style="width:592px">Atelier de découverte du métier d&#x27;informaticien</td></tr><tr id="03643d29-1f68-4bbf-b632-be415959a127"><td id="rrRC" class="" style="width:115px"><strong>Objectifs</strong></td><td id="sLzp" class="" style="width:592px">Découvrir les bases du métier d&#x27;informaticien : <br/>   - installation de système, <br/>   - programmation et <br/>   - mise en réseau avec des Phidgets.<br/></td></tr><tr id="b16a5d5b-6100-487f-805a-0760a1d57513"><td id="rrRC" class="" style="width:115px"><strong>Durée</strong></td><td id="sLzp" class="" style="width:592px">½ journée (environ 3h30)</td></tr></tbody></table><hr id="173cbd3e-af7f-8009-917b-e5e6aa39120b"/><h2 id="173cbd3e-af7f-80f2-96a8-d314676913b2" class="">🚀 Prêts à embarquer dans le monde des informaticiens ?</h2><p id="173cbd3e-af7f-803c-8a3c-ceb96e8ed8c5" class="">Bienvenue dans cet atelier où tu apprendras à utiliser un mini-ordinateur, le Raspberry Pi, afin de faire des trucs vraiment cool ! Avec quelques manipulations, tu pourras programmer et mettre en place un jeu vidéo !</p><hr id="173cbd3e-af7f-80a1-9b3f-e72dabf9ad5d"/><h2 id="173cbd3e-af7f-802e-b1af-db3ea87eea3e" class="">💻 Matériels nécessaires</h2><div id="8b0837e9-3096-43a3-b824-cc7012f1551a" class="column-list"><div id="d59eee94-2506-4589-ab25-c34afb2f487b" style="width:33.33333333333333%" class="column"><figure id="5e87ce30-71c7-46ab-bf12-a0d7c8105a27" class="image"><a href="image.png"><img style="width:240px" src="image.png"/></a><figcaption>Ecran</figcaption></figure></div><div id="f7e35718-6027-4149-bc48-587d298ad15f" style="width:33.33333333333333%" class="column"><figure id="211e3792-79bc-46db-92d2-a1806cb5a63d" class="image" style="text-align:left"><a href="https://images.unsplash.com/photo-1519162721257-18cd195350c2?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"><img style="width:336px" src="https://images.unsplash.com/photo-1519162721257-18cd195350c2?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"/></a><figcaption>Clavier</figcaption></figure></div><div id="84cec02b-a0e1-4247-9dee-16441a3545c2" style="width:33.33333333333333%" class="column"><figure id="46f9c075-4d31-4b77-bd3e-67c41c3afd19" class="image" style="text-align:left"><a href="https://images.unsplash.com/photo-1613091253127-2cc8840f16f2?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"><img style="width:240px" src="https://images.unsplash.com/photo-1613091253127-2cc8840f16f2?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"/></a><figcaption>Souris</figcaption></figure></div></div><div id="52b7cb60-6923-4c39-bd6c-befab9bc73b3" class="column-list"><div id="adc27785-7694-4644-b169-48b13d4420d0" style="width:33.33333333333333%" class="column"><figure id="e99e80bb-8503-480c-90b8-2947b094bf49" class="image"><a href="b77687c3-9fd1-453f-9889-43ff249f57a8.png"><img style="width:427.34693877551024px" src="b77687c3-9fd1-453f-9889-43ff249f57a8.png"/></a><figcaption>Raspberry Pi (mini ordinateur)</figcaption></figure></div><div id="956999f8-8afd-4670-99ce-6eff22f71eed" style="width:33.33333333333333%" class="column"><figure id="1483ebad-b05b-45be-85fd-228e2447fdea" class="image"><a href="image%201.png"><img style="width:288px" src="image%201.png"/></a><figcaption>Switch (pour connecter plusieurs ordinateurs ensemble)</figcaption></figure></div><div id="fc23ee89-99a4-48db-9491-ac4548f70237" style="width:33.33333333333333%" class="column"><figure id="a0a1abad-8726-46b3-b5ef-dd8db4e52566" class="image" style="text-align:center"><a href="63fefe9a-1f0c-409d-9d46-35eeba19c0ec.png"><img style="width:498.4423676012461px" src="63fefe9a-1f0c-409d-9d46-35eeba19c0ec.png"/></a><figcaption>Câble réseau</figcaption></figure></div></div><div id="9cdbbfaf-bd73-4a7b-bffa-34e06b739110" class="column-list"><div id="63acd15c-91db-476f-b9d1-48a2733efbec" style="width:33.33333333333333%" class="column"><figure id="331a7094-f755-44de-a63e-9d27a6aaabc3" class="image" style="text-align:left"><a href="24830951-8292-4d41-8883-dcf487fb5901.png"><img style="width:524.4631578947368px" src="24830951-8292-4d41-8883-dcf487fb5901.png"/></a><figcaption>Câble pour Phidget</figcaption></figure></div><div id="5650206a-c663-4c45-a62c-c89cbbe45090" style="width:33.33333333333334%" class="column"><figure id="f55ee28e-9f13-440c-9d25-fb2448392142" class="image" style="text-align:center"><a href="image%202.png"><img style="width:240px" src="image%202.png"/></a><figcaption>Phidget Hub (HUB0000_0)</figcaption></figure></div><div id="adc9e2e3-507e-41e1-8817-156b7fcaea77" style="width:33.33333333333333%" class="column"><figure id="e8b304a8-75ae-488a-a156-ebd8485ffbba" class="image"><a href="d3f6e250-6905-4d5f-b96f-53cc575beba7.png"><img style="width:488.561872909699px" src="d3f6e250-6905-4d5f-b96f-53cc575beba7.png"/></a><figcaption>Adaptateur SD vers USB</figcaption></figure></div></div><div id="af027976-bea0-46ac-943a-fd9b99814b21" class="column-list"><div id="b393fad7-213e-4fae-acfd-deb8c00b4c2b" style="width:33.33333333333333%" class="column"><figure id="21fd9c4b-ad1e-41a1-a6eb-cbb69615cd35" class="image"><a href="3017_1.jpg"><img style="width:205.3203125px" src="3017_1.jpg"/></a><figcaption>Câble Phidget HUB</figcaption></figure></div><div id="5b0e2494-dfee-47a2-a081-c793dd675a44" style="width:33.333333333333336%" class="column"><figure id="cd9383c6-2192-4381-acc7-a7d91ce50d6c" class="image" style="text-align:center"><a href="e332550d-d71c-480d-9036-51bd7d6e0304.png"><img style="width:288px" src="e332550d-d71c-480d-9036-51bd7d6e0304.png"/></a><figcaption>Carte micro SD (stockage)</figcaption></figure></div><div id="8f14a230-f412-4ab3-9dfb-fc2c5072724a" style="width:33.333333333333336%" class="column"><figure id="836ca03d-d784-4f48-996a-0257107f6e2d" class="image"><a href="877fbf76-cc53-403e-83aa-905320301f39.png"><img style="width:192px" src="877fbf76-cc53-403e-83aa-905320301f39.png"/></a><figcaption>Câble HDMI (vidéo)</figcaption></figure></div></div><div id="1cc05608-795e-49cb-93fc-7964528170a3" class="column-list"><div id="c96941ed-31f5-4c1f-b34c-39ec6946e820" style="width:33.33333333333333%" class="column"><figure id="abdbcd8f-c774-4088-9c55-641b34c55996" class="image"><a href="b71f1cde-405a-435f-b8e9-455dee8d2491.png"><img style="width:386.77165354330714px" src="b71f1cde-405a-435f-b8e9-455dee8d2491.png"/></a><figcaption>Phidget thumbstick (joystick)</figcaption></figure></div><div id="4c90d78a-5351-4f2d-b264-52eabe2958e1" style="width:33.33333333333333%" class="column"><figure id="a2f610a2-ce39-42f0-85dc-a23d6d37caad" class="image"><a href="image%203.png"><img style="width:288px" src="image%203.png"/></a><figcaption>Phidget son</figcaption></figure></div><div id="c52e3582-7b35-4322-85bd-5ac63daf4523" style="width:33.33333333333333%" class="column"><figure id="e6e8e5ff-645c-46bb-80a7-56ecffec254a" class="image"><a href="image%204.png"><img style="width:192px" src="image%204.png"/></a><figcaption>Phidget lumière</figcaption></figure></div></div><div id="8fb8dee7-c041-4f55-ba0a-f5b5d2288b57" class="column-list"><div id="70b231b4-ad3d-4a29-bb4b-95a85fc83729" style="width:33.333333333333336%" class="column"><figure id="94a230a5-5e1a-4842-a8ec-ec7e1a95b761" class="image"><a href="image%205.png"><img style="width:384px" src="image%205.png"/></a><figcaption>Phidget slider</figcaption></figure></div><div id="0b10038e-332f-4f88-b692-218d195143c6" style="width:33.333333333333336%" class="column"><figure id="e464400b-c83e-4a60-9cc0-bba8f12bc62e" class="image"><a href="image%206.png"><img style="width:288px" src="image%206.png"/></a><figcaption>Phidget distance</figcaption></figure></div><div id="0e40b57c-bfa0-4a35-a080-13752d19eb4f" style="width:33.33333333333333%" class="column"><figure id="858805a5-1ff6-430d-a7da-1056bfed98b0" class="image"><a href="image%207.png"><img style="width:192px" src="image%207.png"/></a><figcaption>Phidget température</figcaption></figure></div></div><hr id="173cbd3e-af7f-8059-8b9e-eb502f1def3d"/><h2 id="173cbd3e-af7f-80d2-9a13-f7ede5dfc0ed" class="">🛀 Les étapes de l’aventure</h2><h3 id="173cbd3e-af7f-80c0-971e-d592137f6b75" class="">1. Préparation de la <a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">carte SD</a></h3><p id="173cbd3e-af7f-8029-91ad-e61565e67141" class="">La première étape de votre travail consiste à préparer une carte SD pour accueillir le système d’exploitation Raspberry Pi OS.</p><p id="84a9b492-6add-4ca5-bac5-860e847dcfaf" class="">Le système d&#x27;exploitation est le programme principal qui fait fonctionner un ordinateur. Il gère les composants à l&#x27;intérieur, comme les applications, les fichiers et les composants matériels (écran, clavier, etc.), dans le but que tout fonctionne correctement ensemble.</p><p id="173cbd3e-af7f-807a-a6e9-f0705979c773" class=""><strong>Objectif :</strong></p><ul id="173cbd3e-af7f-8085-8a88-f02ecd68f023" class="bulleted-list"><li style="list-style-type:disc">Préparer une carte SD avec un système d’exploitation linux.</li></ul><p id="9da038ec-9a42-4c97-9d70-d383c745f5c3" class=""><strong>Réalisation :</strong></p><ul id="02fbc697-c7d8-47a8-b6fb-27d811ed8c16" class="bulleted-list"><li style="list-style-type:disc">Insère la carte SD dans son <a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">adaptateur</a> et branche l’adaptateur sur l’un des ports USB de ton poste de travail.</li></ul><ul id="a7b4a4ae-5dff-4240-b3a2-8162a403dbfb" class="bulleted-list"><li style="list-style-type:disc">Dans la barre de recherche Windows, recherche l’application “Raspberry Pi Imager” et démarre-la.</li></ul><figure id="e5066d8f-6afd-482b-9879-5ce2a2abf724" class="image"><a href="image%208.png"><img style="width:384px" src="image%208.png"/></a></figure><ul id="73637f7f-58d0-497c-935c-a2e6aa285a19" class="bulleted-list"><li style="list-style-type:disc">Une fois l’application lancée, tu vas réaliser plusieurs étapes afin de préparer la carte SD qui servira d’espace de stockage principal pour ton Raspberry Pi.</li></ul><ul id="c25615b1-c7f0-4fdf-850a-7812f6a2e567" class="bulleted-list"><li style="list-style-type:disc">Premièrement, sélectionne le modèle du Raspberry. Dans notre cas, il s’agit d’un Raspberry Pi 4</li></ul><figure id="083fa25f-90be-460b-bc62-5bfc41135df0" class="image"><a href="image%209.png"><img style="width:288px" src="image%209.png"/></a></figure><ul id="9da94a64-c6d7-40bf-b190-256fff5dc6a2" class="bulleted-list"><li style="list-style-type:disc">Puis, sélectionne ensuite le système d’exploitation Raspberry PI OS (64-BIT)</li></ul><figure id="6e0ac434-bde9-4631-a4ed-a55b62440196" class="image"><a href="image%2010.png"><img style="width:523.90625px" src="image%2010.png"/></a></figure><ul id="8b4140c8-a5d3-4256-9517-edf24e076dc9" class="bulleted-list"><li style="list-style-type:disc">Sélectionne le support de stockage (carte SD)</li></ul><ul id="75ea04de-64bb-43ec-a5e9-78fb4b0ffa26" class="bulleted-list"><li style="list-style-type:disc">Passe à l’étape suivante, refuse les réglages de personnalisation de l’OS si cela est demandé et accepte de supprimer les données déjà présentes sur la carte.</li></ul><ul id="e0d57a75-99f2-4532-aa68-d4cdb37d69d3" class="bulleted-list"><li style="list-style-type:disc">L’écriture de la carte commence normalement automatiquement.</li></ul><ul id="668781cc-94f1-442f-bcd3-da1131bcf4c4" class="bulleted-list"><li style="list-style-type:disc">L’écriture peut prendre quelques minutes. En attendant que la carte soit prête, tu peux déjà débuter l’étape suivante.</li></ul><hr id="dd4a3a3a-8f9b-4c8e-acb3-afe55cdeed8a"/><h3 id="ecc483bd-b829-48ec-ad62-d0cf38e6385e" class="">2. Préparation et branchement du matériel</h3><p id="e5ca5780-ad4e-481d-a38d-0f47659be374" class="">Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les différents appareils qui sont mis à ta disposition.</p><p id="ce1cc3bb-6333-4867-9731-514ac44aa468" class=""><strong>Objectifs : </strong></p><ul id="94a4df6d-49c5-4266-8cb5-ce4fac825ac2" class="bulleted-list"><li style="list-style-type:disc">Reconnaître les différents appareils et câbles</li></ul><ul id="ad87028d-ba6b-4054-8ec9-b79265a1f16c" class="bulleted-list"><li style="list-style-type:disc">Comprendre l&#x27;importance du réseau dans l&#x27;informatique.</li></ul><p id="135f6171-1fea-4600-b49f-405ff21100ee" class=""><strong>Préparation du </strong><strong><a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">switch</a></strong><strong> :</strong></p><ul id="33e983ce-97d8-4c0c-a5ba-191187990aaa" class="bulleted-list"><li style="list-style-type:disc">Branche  l’alimentation à l’arrière du switch puis sur la prise de courant.</li></ul><figure id="824a54c0-c36a-44bf-b116-1048903ec8ec" class="image"><a href="265bec82-1f07-43ba-a822-6be488a9c1fe.png"><img style="width:288px" src="265bec82-1f07-43ba-a822-6be488a9c1fe.png"/></a></figure><ul id="d46cd3de-6e89-401d-9092-92a207f57242" class="bulleted-list"><li style="list-style-type:disc">Branche <a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">un câble réseau</a> entre le port n°1 du switch et la prise réseau mise à ta disposition.</li></ul><figure id="88ec4971-6a33-49a0-94ce-13810786ae56" class="image"><a href="IMG_20250109_145124.jpg"><img style="width:288px" src="IMG_20250109_145124.jpg"/></a></figure><p id="ce6c5ac7-03d2-4194-8e2d-0a15ec43237d" class=""><strong>Préparation du </strong><strong><a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">Raspberry Pi </a></strong><strong>:</strong></p><ul id="86435c0c-0b11-41e4-9f5d-416b54b93c61" class="bulleted-list"><li style="list-style-type:disc">Branche les périphériques USB (clavier, souris).</li></ul><div id="c7d6265c-21ca-452d-b92c-ddf6f96ba92a" class="column-list"><div id="cdccf744-debe-4113-ae87-88ba430f751d" style="width:50%" class="column"><figure id="9633291c-d0ad-45f1-85a1-864d4a4ee161" class="image" style="text-align:right"><a href="IMG_20250109_144625.jpg"><img style="width:240px" src="IMG_20250109_144625.jpg"/></a></figure></div><div id="d2d8fdb5-333e-4c1a-8b7f-471294020ae9" style="width:50%" class="column"><figure id="a2b15a23-867a-4e5b-b036-5a33ecf5e976" class="image" style="text-align:left"><a href="IMG_20250109_144646.jpg"><img style="width:240px" src="IMG_20250109_144646.jpg"/></a></figure></div></div><ul id="c2cdc37b-819b-4d29-ac92-15b804871194" class="bulleted-list"><li style="list-style-type:disc">Branche-le également à un écran à l’aide du <a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">câble HDMI</a>.</li></ul><figure id="d56fe3d7-5683-46dc-baa3-25f40aa7c081" class="image"><a href="IMG_20250109_144747.jpg"><img style="width:288px" src="IMG_20250109_144747.jpg"/></a></figure><ul id="4ce76659-bf94-4e4f-832c-c87dc1db3c59" class="bulleted-list"><li style="list-style-type:disc">Vérifie que l’écriture et la vérification de la <a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">carte SD</a> que tu as préparée soient bien terminées puis, insère la  carte dans le port prévu à cet effet sous l’appareil.</li></ul><figure id="d10689a1-da39-44d4-8d20-3a244a9b2d67" class="image"><a href="4fff5117-2aa2-4daf-b5fe-2b0afacd24ea.png"><img style="width:288px" src="4fff5117-2aa2-4daf-b5fe-2b0afacd24ea.png"/></a></figure><ul id="a8401843-ad5e-4134-80da-f0097205ea41" class="bulleted-list"><li style="list-style-type:disc">Finalement, branche l’alimentation du Raspberry.</li></ul><figure id="95854cd8-0700-4584-8455-3b199cd23733" class="image" style="text-align:center"><a href="IMG_20250109_144952.jpg"><img style="width:288px" src="IMG_20250109_144952.jpg"/></a></figure><hr id="bc5aafec-c368-4d4c-99c3-a22e8dbc9699"/><h3 id="2333a51c-76eb-441b-ab1f-81dba50b3203" class="">3. Configuration initiale du Raspberry Pi</h3><p id="81567e47-c6c4-4226-b6a9-c6c32adabaf0" class="">Maintenant, découvre comment se déroule la configuration initiale d’un système d’exploitation linux. C’est une étape importante lorsque tu prépares une nouvelle station de travail.</p><p id="4a211abc-2d59-4c34-b388-dd10b7d683c7" class=""><strong>Objectif : </strong></p><ul id="e16417ef-d324-47e5-934f-887d6161ca2c" class="bulleted-list"><li style="list-style-type:disc">Apprendre à réaliser la configuration initiale d’un OS.</li></ul><p id="7e710db0-508e-44a0-a179-6c3a0542c9b7" class=""><strong>Réalisation :</strong></p><ul id="ef64d258-9169-475a-963d-ab4ce10789b5" class="bulleted-list"><li style="list-style-type:disc">Une fois le Raspberry Pi connecté à son alimentation, il démarre automatiquement, il n’y a pas de bouton d’allumage.</li></ul><figure id="26c89161-05c6-4129-a1dc-69a05d664937" class="image"><a href="image%2011.png"><img style="width:624px" src="image%2011.png"/></a></figure><ul id="061a8dee-ba69-47c3-a5f2-fc8f88fbfa21" class="bulleted-list"><li style="list-style-type:disc">Les premiers paramètres à configurer lors du premier lancement d’un système d’exploitation sont généralement la langue, le clavier et le fuseau horaire. Tu parcours les différentes possibilités et tu sélectionnes les paramètres adéquats suivants  :<ul id="e2a36611-61e1-48f8-84df-8b3480d7daea" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-default">Country </mark>: Switzerland</li></ul><ul id="1c0cbd3e-af7f-80d0-8879-cdd7fe6524da" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-teal">Language </mark>: Swiss French</li></ul><ul id="1c0cbd3e-af7f-80ec-96f1-c7792685ebba" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-blue">Timezone </mark>: Zurich</li></ul><p id="1a8cbd3e-af7f-804e-8f61-d852a5a1be00" class="">Désélectionne les deux options désignées ci-dessous.</p></li></ul><figure id="59785a76-129e-4f57-acc7-0d2556f97798" class="image"><a href="image2.png"><img style="width:623.9921875px" src="image2.png"/></a></figure><ul id="b47dbea2-0ef9-4ab2-8e18-d3604d4cbe8f" class="bulleted-list"><li style="list-style-type:disc">Maintenant, tu crées un nouvel utilisateur. Il faut choisir un nom et un mot de passe. Pour cet exercice, tu nommes ton utilisateur “<mark class="highlight-teal">stage</mark>” et son mot de passe est “<mark class="highlight-teal">Pa$$w0rd</mark>”. Tu saisis le nom dans le premier champ et tu saisis le même mot de passe dans les deux derniers champs de texte.</li></ul><figure id="4b40e75f-11ba-4c1c-905c-cbe005d0c33f" class="image"><a href="user.png"><img style="width:624px" src="user.png"/></a></figure><ul id="8f503b18-dd00-483c-96a1-36e17ef26541" class="bulleted-list"><li style="list-style-type:disc">L’étape suivante consiste à configurer le réseau sans fil. Pour l’instant, tu l’ignores et tu reviendras plus tard au moyen d’une autre méthode de connexion à internet.</li></ul><figure id="be9c457b-42b8-4e10-a59e-455bcad37622" class="image"><a href="image%2012.png"><img style="width:624px" src="image%2012.png"/></a></figure><ul id="07d1f33d-b02e-457a-bb84-152dcda4cad3" class="bulleted-list"><li style="list-style-type:disc">L’avant dernière étape de cette installation concerne les mises à jour. Pour des raisons de sécurité, il est primordial de garder un système d’exploitation à jour. Comme cette étape prend du temps, tu passes cette étape en appuyant sur “skip”.</li></ul><figure id="2353c12c-22b9-4bb1-a4c7-1567803880a5" class="image"><a href="image%2013.png"><img style="width:624px" src="image%2013.png"/></a></figure><ul id="a54fa771-5689-4c57-ba41-f6096e61b7cf" class="bulleted-list"><li style="list-style-type:disc">Tu a atteint la fin de cette configuration de base, tu redémarres l’appareil afin que les paramètres choisis s’appliquent correctement.</li></ul><figure id="8b0af8d0-1cdb-4fb0-946a-adf57de0532f" class="image"><a href="image%2014.png"><img style="width:624px" src="image%2014.png"/></a></figure><hr id="b7d251ab-936c-4adf-8613-5d34561d9ad3"/><h3 id="173cbd3e-af7f-8036-a12c-e62c04057c3a" class="">4. Connexion à Internet</h3><p id="173cbd3e-af7f-8088-b326-e7704c93082f" class="">Tu vas maintenant lier les deux appareils que nous avons préparés précédemment afin de connecter ton Raspberry Pi à internet et qu’il puisse communiquer avec le reste du monde.</p><p id="8d845727-2b09-4663-aac0-752c5410565e" class="">Afin de bien comprendre l’importance de cette étape, tu réaliseras divers tests avant et après la connexion.</p><p id="173cbd3e-af7f-80af-89ab-dab1d91904b5" class=""><strong>Objectif :</strong></p><ul id="173cbd3e-af7f-8025-8f75-d07522e50b16" class="bulleted-list"><li style="list-style-type:disc">Comprendre l&#x27;importance du réseau dans l&#x27;informatique.</li></ul><p id="04d5fa68-1f3f-4916-a1ce-5312d0413c05" class=""><strong>Réalisation :</strong></p><ul id="ece0b75e-1af2-45ee-876a-577504d53e67" class="bulleted-list"><li style="list-style-type:disc">Tu vérifies d&#x27;abord l’accès à Internet. Comme tu n’as rien configuré, il est normal que cela ne fonctionne pas.<ul id="25a7a2e7-c979-4cfb-a8f4-b21bb188db9a" class="bulleted-list"><li style="list-style-type:circle">Pour tester, ouvre le navigateur et effectue une recherche quelconque.</li></ul><ul id="50f5558d-740f-4231-bcd9-e1a616092da5" class="bulleted-list"><li style="list-style-type:circle">Tu peux aussi ouvrir l’invité de commande linux et exécuter une commande de test ping comme ci-dessous. Il suffit de recopier la commande et de l’exécuter en appuyant sur la touche [Enter]. </li></ul><div id="8d464139-0bbb-48c2-9a23-ab45d5a3b6be" class="column-list"><div id="81f91783-eef7-4865-b9e9-15b467d3607a" style="width:25%" class="column"><figure id="a1d73c0d-f0cc-4095-a5a3-58efa5ef27a7" class="image"><a href="terminal.png"><img style="width:144px" src="terminal.png"/></a></figure></div><div id="8ff2c1d3-f98a-40c6-a54a-3777d6a267e0" style="width:75%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="17ecbd3e-af7f-803b-8fad-f9f7531cf46c" class="code"><code class="language-Bash">ping google.com</code></pre></div></div><p id="1a8cbd3e-af7f-801b-9179-e6b3cfe880f9" class="">Pour arrêter la commande, il te suffit d’appuyer simultanément sur les touches CTRL + C de ton clavier.</p><p id="17ecbd3e-af7f-803b-8938-cb1faecd8a14" class="">Cette commande teste si ton ordinateur peut communiquer avec le site de Google. Elle envoie des messages (paquet réseau) pour vérifier la connexion. En retour, elle t’affiche si Google répond ainsi que le temps que ça prend.</p></li></ul><ul id="471edbdc-d7b7-4d29-95d6-92df04fe32a7" class="bulleted-list"><li style="list-style-type:disc">Tu lies maintenant le Raspberry Pi à l’équipement réseau. Adresse-toi au professeur présent dans la salle pour récupérer un deuxième câble réseau. Ensuite, tu le branches sur le port n°2 du switch et l’unique port réseau du Raspberry Pi.</li></ul><div id="df50aec5-22f6-4454-b0d0-dc0449c785fd" class="column-list"><div id="470ca294-4757-4628-8004-a2fa3c70e8a0" style="width:50%" class="column"><figure id="e0b4b5b6-05bd-48b0-a5cd-b05ac2c2e425" class="image"><a href="IMG_20250109_145113.jpg"><img style="width:323.5px" src="IMG_20250109_145113.jpg"/></a></figure></div><div id="6177d84b-2ac4-4dcc-a52c-b1bf97d1cc0b" style="width:50.000000000000014%" class="column"><figure id="7ba988f6-3d8b-4354-bc20-96316bd013b1" class="image"><a href="IMG_20250109_145043.jpg"><img style="width:708px" src="IMG_20250109_145043.jpg"/></a></figure></div></div><ul id="17b77733-0c96-46ff-a4d1-2e1aff68ddec" class="bulleted-list"><li style="list-style-type:disc">Maintenant, tu vérifies à nouveau la connexion avec les deux méthodes mentionnées précédemment. La connexion à Internet est établie, les tests doivent se passer sans problème.</li></ul><hr id="cfa29503-0e3a-4b0d-84b6-e4d86d048854"/><h3 id="183ac484-5144-46e8-842e-a26fcc41b762" class="">5. Code par toi-même !</h3><p id="dbd32046-2271-404f-947f-539067da67fe" class=""><strong>Objectif :</strong></p><p id="6bfe236a-6d7d-4efe-9e0d-a194ad332874" class="">Apprendre à créer un programme simple en blocs pour utiliser différents Phidgets.</p><p id="1ca01748-775b-4e0a-a7f6-8138bcc0949a" class=""><strong>Réalisation :</strong></p><ol type="1" id="75bf679a-951b-4237-a5f1-7fd18ab2fff2" class="numbered-list" start="1"><li>Connecte les <a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">Phidgets</a> au <a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">Hub</a> à l’aide des <a href="https://www.notion.so/Consignes-173cbd3eaf7f803ab94bce0850450817?pvs=21">câbles fournis</a>.</li></ol><ol type="1" id="2cafeb5e-b1b5-498a-be9b-285cf6f35202" class="numbered-list" start="2"><li>Branche le Hub au Raspberry Pi à l’aide du câble USB.</li></ol><ol type="1" id="e9e771ec-3250-4ae4-afe6-4d4ab46e31b0" class="numbered-list" start="3"><li>Ouvre le site <a href="https://makecode.phidgets.com/#">makecode.phidgets.com</a>.</li></ol><figure id="c112e17e-3002-447f-93ac-f4feedb49a0c" class="image"><a href="C74BB9BF-FC59-4B32-9092-52578A6422F7.png"><img style="width:528px" src="C74BB9BF-FC59-4B32-9092-52578A6422F7.png"/></a></figure><ol type="1" id="c17947be-bc99-4b0f-a631-1a7f9b231350" class="numbered-list" start="1"><li>Clique sur &quot;Nouveau projet&quot;.</li></ol><ol type="1" id="4e728c6f-661f-4419-a613-1536e783f23e" class="numbered-list" start="2"><li>Tu arrives ensuite sur la page suivante :</li></ol><figure id="53500a1c-9acc-4a48-b2f9-bc23ffe6e26f" class="image"><a href="35515E77-F1EB-4503-9154-7E489B299EC7.png"><img style="width:528px" src="35515E77-F1EB-4503-9154-7E489B299EC7.png"/></a></figure><p id="1b7cbd3e-af7f-80ea-b2a9-c634eb7b4367" class="">Ce programme permet de prendre en main les Phidgets et la création de petits programmes simples.</p><p id="f80bafbb-41ed-4da9-8668-d972fd65043e" class="">Clique sur le bouton en bas à gauche pour connecter les Phidgets</p><p id="c91888f4-ca28-49fb-9b43-3ecd929a0def" class="">Tu peux t’amuser à composer toi-même ton programme.</p><p id="1b7cbd3e-af7f-8002-836f-f3cbcaba88ea" class="">Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les utiliser, tu les glisses et les places sur la droite. Ces blocs remplacent les lignes de code. Ils permettent de découvrir l’univers du développement de façon ludique et instinctive.</p><p id="87b62cf8-3ff7-4fac-adf6-e6451cb6874c" class="">Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.</p><figure id="1b9cbd3e-af7f-8074-a621-d61b6da6314f"><div class="source"><a href="Stage_dcouverte.mp4">attachment:9c5170e1-0ee8-4be2-8762-c55cd9e7a112:Stage_dcouverte.mp4</a></div></figure><p id="1b7cbd3e-af7f-8082-9519-c5a912bf4a56" class="">Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !</p><h3 id="17ecbd3e-af7f-80dd-a1da-d4db0d143e5c" class="">6. Code ton Jeu du “snake” avec ta propre manette</h3><figure id="8ebba015-921e-4c89-ae64-70607ef6c758" class="image"><a href="eea168a6-5964-40e4-b11e-b30f79640f61.png"><img style="width:144px" src="eea168a6-5964-40e4-b11e-b30f79640f61.png"/></a></figure><p id="ccc032f2-0489-4941-a88c-f11cfca93f38" class="">Nous allons, ensemble, réaliser les quelques actions pour jouer au jeu snake.</p><p id="19701d43-03ad-4c0d-aded-51b533092d66" class="">Le jeu est simple. Tu diriges un serpent qui se déplace dans un environnement en deux dimensions de manière verticale et horizontale.</p><p id="9b426100-f119-4b0b-abad-af733ed71d20" class="">Le but du serpent est de manger des pommes qui apparaissent aléatoirement sur ton écran. A chaque fois que le serpent mange une pomme, il grandit. Le jeu est infini mais, attention, il doit éviter les bords ou toi-même sinon tu perds la partie.</p><figure id="353ba0a8-820c-4dfb-b7c4-548c9de1b56d" class="image"><a href="41c33fea-1523-43e3-83f9-239c91f19f30.png"><img style="width:336px" src="41c33fea-1523-43e3-83f9-239c91f19f30.png"/></a></figure><p id="c9cfc61e-f797-493c-aaf8-de2ac8bcb5a3" class="">Tu finalises ton installation afin de faire fonctionner le jeu correctement. Tu retrouves, ci-dessous, un schéma vulgarisé de ce que tu dois mettre en place et du rôle de chacun des appareils.</p><figure id="b7525d4a-230e-4dea-8c49-045888ac364f" class="image"><a href="Dessin.png"><img style="width:2px" src="Dessin.png"/></a></figure><h3 id="158da603-78d6-46f0-95a5-3170098953e0" class="">6.1. Préparation de la manette</h3><p id="25a4d3f2-e44c-408b-a614-ca9d085a7269" class="">Tu as besoin d’une manette pour jouer.</p><ul id="cfc0625e-730b-4c58-9d37-a867f082d035" class="bulleted-list"><li style="list-style-type:disc">Ouvre le terminal de commandes linux</li></ul><figure id="40ea20a5-15c0-49de-8095-5771c57e88c7" class="image" style="text-align:left"><a href="terminal.png"><img style="width:144px" src="terminal.png"/></a></figure><ul id="739f6865-ed0a-4be7-b736-9206af3cb81f" class="bulleted-list"><li style="list-style-type:disc">Exécute les commandes suivantes une à une.<ul id="fa505c3a-237e-4f32-9a5e-b379e1e9baf3" class="bulleted-list"><li style="list-style-type:circle">Téléchargement<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="fc0ec6b7-29df-43b6-bc54-ba2d1a8d01f3" class="code"><code class="language-Shell">wget -P ~ https://raw.githubusercontent.com/emf-info/StageDecouverte/refs/heads/main/server_setup.sh</code></pre></li></ul><ul id="a9e6aa2b-cc09-4f21-9675-cf39397ce12d" class="bulleted-list"><li style="list-style-type:circle">Modification des permissions<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="702d69c7-8f45-41bd-8a4f-37126f5ea6d0" class="code"><code class="language-Shell">chmod +x ~/server_setup.sh</code></pre></li></ul><ul id="e5c01c14-6197-4164-a3e7-6908abe36277" class="bulleted-list"><li style="list-style-type:circle">Exécution</li></ul><p id="6c4443c3-89d7-4516-9216-b4aa1c6d3a57" class="">Après avoir exécuté la commande suivante, tu entres le mot de passe défini durant la configuration du Raspberry Pi et tu valides avec la touche [Enter] <br/><br/><strong>Pour des raisons de sécurité,</strong> il est normal que les caractères ne s’affichent pas lorsque tu écris le mot de passe.<div class="indented"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="64bd940c-00f5-457c-99c9-65a619d0d8f9" class="code"><code class="language-Shell">sudo ~/server_setup.sh</code></pre></div></p></li></ul><p id="6df17d0e-71ea-4dbb-b805-b7c3b8d3ee31" class="">Tu as téléchargé, rendu exécutable et exécuté un script linux. Ce dernier contient une liste de commandes et d’actions à exécuter automatiquement.</p><p id="9150b13f-5bf8-4282-af9f-fb0924097a57" class="">Ce genre de script est utilisé pour gagner du temps lors de tâches répétitives, d’installations complexes ou pour de l’automatisation.</p><p id="6f18a407-d589-4449-b9bb-b4fb53194e70" class="">Dans notre cas, il met en place les différents systèmes qui permettront de jouer à snake !</p><h3 id="607980f1-808e-487d-98be-553c61ef8c8e" class="">6.2. Mise en place de l’affichage</h3><p id="44a7860c-d07e-4389-beea-1c785222a823" class="">Maintenant, ta manette est prête. Tu prépares l’affichage de ton jeu depuis ton poste de travail. Tu as besoin de quelques fichiers et tu fais les ajustements suivants.</p><ul id="0a213168-d18a-4b6e-9db1-ddc52b7728f6" class="bulleted-list"><li style="list-style-type:disc">Télécharge les fichiers qui permettent d’afficher ton jeu <a href="https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/Stage%20d%C3%A9couverte.zip">ici</a>.</li></ul><ul id="4773fc1b-1be7-433c-bf3a-832ea132ee5d" class="bulleted-list"><li style="list-style-type:disc">Clique avec le bouton droit de la souris sur le fichier téléchargé et sélectionne la fonctionnalité  “Extraire tout”. Il s’agit d’un fichier compressé.</li></ul><ul id="6affc52d-2d9b-4678-930e-bc73968e4464" class="bulleted-list"><li style="list-style-type:disc">Tu as, dès lors, accès à un dossier contenant les fichiers utiles pour l’affichage de ton jeu.</li></ul><div id="e9dabf43-5346-41a3-bb3e-e9a86b93e373" class="column-list"><div id="2186d0f6-bd23-4412-890a-53e8a79ab639" style="width:81.25%" class="column"><ul id="3c92134e-eafb-471c-a13b-2d49906e8a2e" class="bulleted-list"><li style="list-style-type:disc">En parcourant le contenu du dossier, tu remarques trois fichiers.<ul id="a863f121-8188-4a36-8f27-87728fd4e8ce" class="bulleted-list"><li style="list-style-type:circle">Le premier fichier s’appelle “<mark class="highlight-red">index.html</mark>”. Il sert à définir le contenu de notre affichage qui peut être du texte, un tableau, une liste, etc.</li></ul><ul id="fa052f58-f32c-41f2-9c0a-d991fe059d50" class="bulleted-list"><li style="list-style-type:circle">Le second fichier “<mark class="highlight-blue">styles.css</mark>” définit comment sera affiché le contenu. Il décrit, par exemple, la couleur du texte ou du fond. </li></ul><ul id="6269a027-c596-4efd-88e6-b1a40dcdf5a5" class="bulleted-list"><li style="list-style-type:circle">Finalement, tu retrouves le fichier nommé “<mark class="highlight-yellow">script.js</mark>”. Ce fichier contient toutes les actions techniques de notre affichage.</li></ul></li></ul></div><div id="898f6ad8-3c8a-4286-a448-299c105434ca" style="width:18.75%" class="column"><figure id="5c2c9bfa-963f-49da-88b0-e7a8b3e9f433" class="image" style="text-align:center"><a href="6D0DD684-DC00-4105-BD21-68B6FD4F6C19.png"><img style="width:240px" src="6D0DD684-DC00-4105-BD21-68B6FD4F6C19.png"/></a></figure></div></div><ul id="ff0a7b90-4ae6-4433-bcfa-f01ee993005d" class="bulleted-list"><li style="list-style-type:disc">Pour visualiser, tu double cliques sur le fichier “<mark class="highlight-red">index.html</mark>”. Une page Internet doit s&#x27;ouvrir.</li></ul><figure id="5f13b800-dfc2-4308-a67d-a162c83112c2" class="image"><a href="40035457-8722-4137-87B0-95074D62BAC2.png"><img style="width:624px" src="40035457-8722-4137-87B0-95074D62BAC2.png"/></a></figure><ul id="54e19c2d-1930-40e5-8338-49b9cabbdbc3" class="bulleted-list"><li style="list-style-type:disc">Tu constates que, pour l’instant, le jeu n’est pas fonctionnel. Comme mentionné précédemment, l’affichage doit communiquer avec notre manette pour que le jeu fonctionne.  Tu dois modifier le code fournit en tenant compte des informations trouvées.</li></ul><h3 id="82ea5501-c057-48b7-b354-7bc5b791e6db" class="">6.3. Rendre ton jeu fonctionnel</h3><p id="55e3087c-fb42-4cc7-acc7-1715b5329694" class="">Dans le point précédent, nous avons mentionné les différents fichiers utiles pour l’affichage. Un de ces fichiers est utilisé pour la communication avec la manette. Tu as peut-être deviné, il s&#x27;agit du fichier “<mark class="highlight-yellow">script.js</mark>” ! </p><p id="a74bc7ba-dca2-4399-836d-7e42f096a485" class="">Mais avant de modifier le code, il faut d’abord savoir ce qu’on va faire. Pour trouver la manette, on doit savoir comment s’y adresser.</p><p id="62911568-e5f7-477a-8a23-dcfe09110b8b" class="">Les ordinateurs sont tous associés à une adresse IP sur un réseau. Cette adresse  permet de communiquer sur le réseau (comme le prénom de quelqu’un pour s’adresser à la personne). C’est cette adresse IP que nous utiliserons pour récupérer les commandes de notre manette.</p><p id="bfd2585d-c333-4ee2-b72d-8223269ed35c" class="">Pour trouver l’adresse IP de notre Raspberry Pi, ouvre un nouveau terminal et tape la commande suivante :</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="c4b48e3d-f06f-4779-b9ee-fe2edd90577a" class="code"><code class="language-Shell">ip addr show</code></pre><p id="f8b538d8-cf31-4ad4-b5ab-597f9c03371c" class="">Tu dois obtenir un résultat comme celui-ci :</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="3f14571f-b747-435c-9fdb-2dd1a7efbf46" class="code"><code class="language-Shell">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:24:f1:03 brd ff:ff:ff:ff:ff:ff
+    inet XXX.XXX.XXX.XXX/YY brd XXX.XXX.XXX.XXX scope global dynamic noprefixroute eth0
+       valid_lft 86210sec preferred_lft 86210sec
+    inet6 fe80::a725:1f07:d8ed:8bda/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever</code></pre><p id="141d3045-b2e3-48cb-b7d1-0bd0b680c88c" class="">Il y a beaucoup d’informations mais c’est la suite de numéros en rouge qui nous intéresse. Prends en note pour modifier le code.</p><p id="55cfec14-eb96-4a27-8a44-3ad3845d45c3" class="">Tu peux retourner sur ton poste de travail pour modifier l’affichage.</p><p id="100766e9-79c3-4856-9718-3592660a09a5" class="">Fais un clic droit sur le fichier “<mark class="highlight-yellow">script.js</mark>”, sélectionne “Ouvrir avec” et choisis un logiciel pour éditer le code comme Visual Studio Code ou simplement le bloc-note.</p><p id="a9afbc3a-bbe3-41f9-a3af-8315e5d86246" class="">Tu recherches parmi ces lignes de code, celle qui permet de spécifier l’adresse IP.</p><p id="0f3bda77-75c4-4b57-a82d-feba80637498" class="">Voilà à quoi cela ressemble :</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="e843dd4b-3c01-45f8-bac3-f7b8749f0e88" class="code"><code class="language-JavaScript">fetch (&#x27;http://XXX.XXX.XXX.XXX:3000/api/joystick&#x27;)</code></pre><p id="49d16ffa-155b-4701-937a-88db1baecb2a" class="">Tu remplaces l’adresse IP présente dans le code par celle de ton Raspberry Pi et tu enregistres tes modifications et tu fermes l’éditeur de texte.</p><p id="651bf13b-57d5-4b7b-b0cb-997ab2c209c4" class="">Puis, retourne sur ton navigateur et recharge la page grâce à la touche “F5” sur ton clavier.</p><p id="70da8e85-6034-440f-9855-e299d34d3e7e" class="block-color-teal"><mark class="highlight-teal"><mark class="highlight-default_background">Bien joué, ton jeu Snake est maintenant opérationnel !</mark></mark></p><figure id="d46d9247-9a64-451d-aa34-28da2ee85644" class="image"><a href="https://images.unsplash.com/photo-1499233983070-99a5f004e720?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"><img style="width:384px" src="https://images.unsplash.com/photo-1499233983070-99a5f004e720?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"/></a></figure><p id="d2f51743-f04c-41f3-bcb3-36262b133cc6" class=""><mark class="highlight-yellow">Si quelque chose ne fonctionne pas correctement ou que tu as des questions. N’hésite pas à t’adresser à l’accompagnant.</mark></p><h3 id="1c0cbd3e-af7f-80ea-b835-ef47950cdfe1" class="">7. Challenges avec Scratch et Phidgets</h3><p id="1c7cbd3e-af7f-804a-9ec8-c75f753bbe7e" class="">Voici quelques challenges que tu peux effectuer avec les phidgets. On utilise le site scratch qui permet de créer des petits programmes simplement avec des bloques comme tu l’a fait durant l’exercice 5.</p><p id="1c0cbd3e-af7f-8002-a4e6-fc618d278f80" class="">Ouvre scratch sur l’ordinateur à l’adresse suivante : <a href="http://phidgets.com/education/scratch">http://phidgets.com/education/scratch</a></p><p id="1c7cbd3e-af7f-808e-82ee-d1bdcdf385c2" class="">Pour tous les challenges, tu aura besoins du HUB, du cable USB et des cables pour les phidgets. Les phidgets a utiliser sont précisés pour chaque exercice.</p><p id="1c0cbd3e-af7f-80d2-90b8-dd8b95faf3af" class="">Pour te simplifier la tache, pour chaque challenge tu auras un fichier qui contiens la base de chaque programme. Pour utiliser cette base, tu dois la télécharger, puis l’importer dans scratch :</p><figure id="1c7cbd3e-af7f-802d-8cda-cb7a09c6b2c2" class="image" style="text-align:center"><a href="E380A225-245C-4EBB-A6C1-A9491CEE5B51.png"><img style="width:288px" src="E380A225-245C-4EBB-A6C1-A9491CEE5B51.png"/></a></figure><p id="1c7cbd3e-af7f-802b-a4f3-fdfff9141ac7" class="">Et tu sélectionne le fichier que tu viens de télécharger.</p><p id="1c7cbd3e-af7f-80ae-918a-f9cd07282b1c" class="">Il te faut également importer les blocs de code des phidgets :</p><div id="1c7cbd3e-af7f-80e6-8a1a-f4004c67745a" class="column-list"><div id="1c7cbd3e-af7f-80ac-ae85-c820d2228de4" style="width:50%" class="column"><figure id="1c7cbd3e-af7f-8099-bcee-f7bf4e41c0f6" class="image" style="text-align:right"><a href="4CA0D872-DCEC-43A4-BC02-B29F3D0D5D9F.png"><img style="width:144px" src="4CA0D872-DCEC-43A4-BC02-B29F3D0D5D9F.png"/></a></figure></div><div id="1c7cbd3e-af7f-8052-bcbf-d59b10e6c706" style="width:50%" class="column"><figure id="1c7cbd3e-af7f-8004-ac6d-f88aa124ad7b" class="image" style="text-align:left"><a href="7BDABE97-210C-4EC6-8025-D15DACEE492A.png"><img style="width:192px" src="7BDABE97-210C-4EC6-8025-D15DACEE492A.png"/></a></figure></div></div><p id="1c7cbd3e-af7f-8079-880e-e0240599a21b" class="">Et finalement, il y a deux boutons qui te permettent de lancer et de stoper le programme :</p><figure id="1c7cbd3e-af7f-8023-b65f-c067fb521949" class="image"><a href="image%2015.png"><img style="width:240px" src="image%2015.png"/></a></figure><ol type="1" id="1c0cbd3e-af7f-800f-8e7f-dbd1df600e1f" class="numbered-list" start="1"><li><strong>Challenge 1 : Déplacement et Saut</strong><p id="1c0cbd3e-af7f-80b5-8587-f664fd2722bf" class="">Utilise le capteur <strong>thumbstick </strong>pour déplacer Scratch et effectuer un saut.</p><figure id="1c0cbd3e-af7f-80c5-ad34-d8bc6ec22188" class="image"><a href="image%2016.png"><img style="width:681.9921875px" src="image%2016.png"/></a></figure><p id="1c0cbd3e-af7f-8085-8d21-de0f8650263f" class="">Télécharge le programme suivant : </p><figure id="1c0cbd3e-af7f-80bd-9c0b-c5d1a54fbf7d"><div class="source"><a href="Challenge_1.sb3">Challenge_1.sb3</a></div></figure><p id="1c0cbd3e-af7f-80c2-a1e4-e32378e2bac3" class="">Recopie le code suivant :</p><figure id="1c0cbd3e-af7f-803c-b82e-c5a86c493a36" class="image"><a href="image%2017.png"><img style="width:681.9921875px" src="image%2017.png"/></a></figure></li></ol><ol type="1" id="1c7cbd3e-af7f-8006-b909-d0635a9a37e5" class="numbered-list" start="2"><li><strong>Challenge 2 : Mouvements avec le joystick</strong><p id="1c7cbd3e-af7f-809d-be74-e664904d0c01" class="">Utilise le capteur <strong>thumbstick </strong>pour déplacer le poisson horizontalement et verticalement.</p><figure id="1c7cbd3e-af7f-801e-a22b-c9c98383aa63" class="image"><a href="image%2018.png"><img style="width:709.984375px" src="image%2018.png"/></a></figure><p id="1c7cbd3e-af7f-8033-bbce-d77fdeb2633d" class="">Télécharge le programme suivant : </p><figure id="1c7cbd3e-af7f-8016-9196-c56b3ec6bd88"><div class="source"><a href="Challenge_2.sb3">Challenge_2.sb3</a></div></figure><p id="1c7cbd3e-af7f-8060-9d71-fbeb6beee553" class="">Pas d’exemple de code pour cet exercice, essaie par toi-meme !</p></li></ol><ol type="1" id="1c7cbd3e-af7f-801f-ba0a-d3065c946403" class="numbered-list" start="3"><li><strong>Challenge 3 : Changement de taille avec le slider</strong><p id="1c7cbd3e-af7f-80d5-ac48-d0192a1d950f" class="">Utilise le capteur <strong>slider </strong>pour modifier la taille de Scratch.</p><figure id="1c7cbd3e-af7f-809a-87ca-c330e82d76df" class="image"><a href="image%2019.png"><img style="width:682px" src="image%2019.png"/></a></figure><p id="1c7cbd3e-af7f-8094-b30d-fa7023058efb" class="">Télécharge le programme suivant : </p><figure id="1c7cbd3e-af7f-8058-a875-dd064ff4a44c"><div class="source"><a href="Challenge_3.sb3">Challenge_3.sb3</a></div></figure><p id="1c7cbd3e-af7f-8064-862f-f50f5eadfed3" class="">Pas d’exemple de code pour cet exercice, essaie par toi-meme !</p></li></ol><ol type="1" id="1c7cbd3e-af7f-80a8-a110-c506966a740e" class="numbered-list" start="4"><li><strong>Challenge 4 : Musique avec la distance</strong><p id="1c7cbd3e-af7f-80c4-be28-cb5a20b62538" class="">Utilise le capteur de <strong>distance </strong>pour jouer de la musique.</p><figure id="1c7cbd3e-af7f-80d5-9d0c-eebec42c844b" class="image"><a href="image%2020.png"><img style="width:682px" src="image%2020.png"/></a></figure><p id="1c7cbd3e-af7f-8078-a3f7-fe0d13abae1f" class="">Télécharge le programme suivant : </p><figure id="1c7cbd3e-af7f-80d1-9640-c1c2dbab3fb9"><div class="source"><a href="Challenge_4.sb3">Challenge_4.sb3</a></div></figure><p id="1c7cbd3e-af7f-802f-a30a-c5dc799cd4ab" class="">Pas d’exemple de code pour cet exercice, essaie par toi-meme !</p></li></ol><ol type="1" id="1c7cbd3e-af7f-80a4-8f33-c6407cd57e54" class="numbered-list" start="5"><li><strong>Challenge 5 : Interaction avec le capteur sonore</strong><p id="1c7cbd3e-af7f-8075-a586-ce2d85e6d278" class="">Utilise le capteur <strong>sound </strong>pour modifier le fond en faisant du bruit.</p><figure id="1c7cbd3e-af7f-80f9-ac4c-efe502c17763" class="image"><a href="image%2021.png"><img style="width:682px" src="image%2021.png"/></a></figure><p id="1c7cbd3e-af7f-800b-baab-f4419bbea62a" class="">Télécharge le programme suivant : </p><figure id="1c7cbd3e-af7f-8090-be83-d3330d254c77"><div class="source"><a href="Challenge_5.sb3">Challenge_5.sb3</a></div></figure><p id="1c7cbd3e-af7f-80f0-a9bf-f8cf1889b6fe" class="">Pas d’exemple de code pour cet exercice, essaie par toi-meme !</p></li></ol><hr id="173cbd3e-af7f-80cd-86e5-e9591fa4c71c"/><h2 id="173cbd3e-af7f-806a-9dd0-ee57028c9b3b" class="">🚀 Prêt à coder et explorer ?</h2><p id="173cbd3e-af7f-8024-926a-dd95a835915b" class="">L’informatique, c’est comme une aventure pleine de mystères ! En suivant ces étapes, tu vas découvrir ce qu’un informaticien fait au quotidien. Qui sait, peut-être que tu deviendras le prochain génie des systèmes ou un développeur star !</p><p id="173cbd3e-af7f-805a-8d09-f5a08ef8fa9e" class="">Alors, prêt à relever le défi ? 🎉</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
