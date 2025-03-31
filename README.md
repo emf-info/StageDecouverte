@@ -4,11 +4,16 @@ Raspberry Pi !
 
 | **Titre** | Atelier de découverte du métier d'informaticien |
 | --- | --- |
-| **Objectifs** | Découvrir les bases du métier d'informaticien : 
-   - installation de système, 
-   - programmation et 
-   - mise en réseau avec des Phidgets. |
 | **Durée** | ½ journée (environ 3h30) |
+
+**Objectifs :**
+
+Découvrir les bases du métier d'informaticien
+   - installation de système
+   - programmation
+   - mise en réseau avec des Phidgets|
+
+
 
 ---
 
@@ -48,7 +53,7 @@ Bienvenue dans cet atelier où tu apprendras à utiliser un mini-ordinateur, le 
 
 ## 🛀 Les étapes de l’aventure
 
-### 1. Préparation de la [carte SD](## 💻 Matériels nécessaires)
+### 1. Préparation de la carte SD
 
 La première étape de votre travail consiste à préparer une carte SD pour accueillir le système d’exploitation Raspberry Pi OS.
 
@@ -229,9 +234,7 @@ Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les ut
 
 Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.
 
-[Stage découverte.mp4](consigne_ressources/Stage_dcouverte.mp4)]
-
-[!][](Stage_dcouverte.mp4)](Stage_dcouverte.mp4)
+[🎞️ Vidéo pour un exercice d'exemple](consigne_ressources/Stage_dcouverte.mp4)
 
 Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !
 
