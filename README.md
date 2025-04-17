@@ -73,7 +73,7 @@ Le système d'exploitation est le programme principal qui fait fonctionner un or
 - Une fois l’application lancée, tu vas réaliser plusieurs étapes afin de préparer la carte SD qui servira d’espace de stockage principal pour ton Raspberry Pi.
 - Premièrement, sélectionne le modèle du Raspberry. Dans notre cas, il s’agit d’un Raspberry Pi 4
 
-![image.png](consigne_ressources/image%209.png)
+![image.png](consigne_ressources/raspberry4.png)
 
 - Puis, sélectionne ensuite le système d’exploitation Raspberry PI OS (64-BIT)
 
@@ -101,7 +101,7 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 
 ![IMG_20250109_152731.jpg](consigne_ressources/265bec82-1f07-43ba-a822-6be488a9c1fe.png)
 
-- Branche un câble réseau entre le port n°1 du switch et la prise réseau mise à ta disposition.
+- Branche un câble réseau entre le port n°1 du switch et la prise réseau mise à ta disposition (EMFNet).
 
 ![IMG_20250109_145124.jpg](consigne_ressources/IMG_20250109_145124.jpg)
 
