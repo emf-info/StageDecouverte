@@ -294,7 +294,7 @@ Pour te faire une idée, visualise la vidéo d’exemple. On réalise un program
 
 <video src="consigne_ressources/ex_phidget.mp4" controls style="max-width: 100%;"></video>
 
-[🎞️ Vidéo pour un exercice d'exemple](consigne_ressources/ex_phidget.mp4)
+[🎞️ Vidéo pour un exercice d'exemple](consigne_ressources/video.html)
 
 Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !
 
