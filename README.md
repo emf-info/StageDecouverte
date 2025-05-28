@@ -255,7 +255,7 @@ Tu as besoin d’une manette pour jouer.
        ```bash
        sudo ~/server_setup.sh
        ```
-       > Cette commande est très longue, tu peux réaliser le [**point 6**](https://github.com/emf-info/StageDecouverte/blob/main/README.md#6-code-par-toi-m%C3%AAme--a-faire-sur-lordinateur pendant le temps d'exécution du script!
+       > Cette commande est très longue, tu peux réaliser le [**point 6**](https://github.com/emf-info/StageDecouverte/blob/main/README.md#6-code-par-toi-m%C3%AAme--a-faire-sur-lordinateur) pendant le temps d'exécution du script!
 
 Tu as téléchargé, rendu exécutable et exécuté un script linux. Ce dernier contient une liste de commandes et d’actions à exécuter automatiquement.
 
