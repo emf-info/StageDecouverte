@@ -32,7 +32,7 @@ Bienvenue dans cet atelier où tu apprendras à utiliser un mini-ordinateur, le 
 
 |Câble pour Phidget |Phidget Hub (HUB0000_0) |Adaptateur SD vers USB |
 |----|----|----|
-|![Câble pour Phidget](consigne_ressources/24830951-8292-4d41-8883-dcf487fb5901.png) |![Phidget Hub (HUB0000_0)](consigne_ressources/image%202.png) |![Adaptateur SD vers USB](consigne_ressources/d3f6e250-6905-4d5f-b96f-53cc575beba7.png) |
+|![Câble pour Phidget](consigne_ressources/24830951-8292-4d41-8883-dcf487fb5901.png) |![Phidget Hub (HUB0000_0)](consigne_ressources/image%202.png) |![Adaptateur SD vers USB](consigne_ressources/adaptateur_usb.jpg) |
 
 |Câble Phidget HUB |Carte micro SD (stockage) |Câble HDMI (vidéo) |
 |----|----|----|
