@@ -63,6 +63,8 @@ Le système d'exploitation est le programme principal qui fait fonctionner un or
 **Réalisation :**
 
 - Insère la carte SD dans son adaptateur et branche l’adaptateur sur l’un des ports USB de ton poste de travail.
+![sd_usb1.png](consigne_ressources/sd_usb1.png)
+![sd_usb2.png](consigne_ressources/sd_usb2.png)
 - Dans la barre de recherche Windows, recherche l’application “Raspberry Pi Imager” et démarre-la.
 
 ![image.png](consigne_ressources/image%208.png)
