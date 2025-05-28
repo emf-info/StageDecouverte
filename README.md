@@ -22,13 +22,13 @@ Bienvenue dans cet atelier où tu apprendras à utiliser un mini-ordinateur, le 
 
 ## 💻 Matériels nécessaires
 
-|Ecran |Clavier / Souris | |
+|Ecran |Clavier / Souris |Raspberry Pi (mini ordinateur) |
 |----|----|----|
-|![Ecran](consigne_ressources/image.png)  |![Clavier / Souris](consigne_ressources/k400.png) | |
+|![Ecran](consigne_ressources/image.png)  |![Clavier / Souris](consigne_ressources/k400.png) |![Raspberry Pi (mini ordinateur)](consigne_ressources/raspberry_pi.png) |
 
-|Raspberry Pi (mini ordinateur) |Switch (pour connecter plusieurs ordinateurs ensemble) |3x Câbles réseaux (blanc, bleu, violet)  |
+|Alimentation Raspberry Pi |Switch (pour connecter plusieurs ordinateurs ensemble) |3x Câbles réseaux (blanc, bleu, violet)  |
 |----|----|----|
-|![Raspberry Pi (mini ordinateur)](consigne_ressources/raspberry_pi.png) |![Switch (pour connecter plusieurs ordinateurs ensemble)](consigne_ressources/gs105_alim_2.jpg) |![Câble réseau](consigne_ressources/63fefe9a-1f0c-409d-9d46-35eeba19c0ec.png) |
+|![Alimentation pour le raspberry Pi](consigne_ressources/alim-rpi5.jpg) |![Switch (pour connecter plusieurs ordinateurs ensemble)](consigne_ressources/gs105_alim_2.jpg) |![Câble réseau](consigne_ressources/63fefe9a-1f0c-409d-9d46-35eeba19c0ec.png) |
 
 |Câble pour Phidget |Phidget Hub (HUB0000_0) |Adaptateur SD vers USB |
 |----|----|----|
