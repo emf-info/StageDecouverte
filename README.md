@@ -22,9 +22,9 @@ Bienvenue dans cet atelier où tu apprendras à utiliser un mini-ordinateur, le 
 
 ## 💻 Matériels nécessaires
 
-|Ecran |Clavier |Souris |
+|Ecran |Clavier / Souris | |
 |----|----|----|
-|![Ecran](consigne_ressources/image.png)  |![Clavier](https://images.unsplash.com/photo-1519162721257-18cd195350c2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb) |![Souris](https://images.unsplash.com/photo-1613091253127-2cc8840f16f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb) |
+|![Ecran](consigne_ressources/image.png)  |![Clavier / Souris](consigne_ressources/k400.png) | |
 
 |Raspberry Pi (mini ordinateur) |Switch (pour connecter plusieurs ordinateurs ensemble) |3x Câbles réseaux (blanc, bleu, violet)  |
 |----|----|----|
