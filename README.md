@@ -36,7 +36,7 @@ Bienvenue dans cet atelier où tu apprendras à utiliser un mini-ordinateur, le 
 
 |Câble Phidget HUB |Carte micro SD (stockage) |Câble HDMI (vidéo) |
 |----|----|----|
-|![Câble Phidget HUB](consigne_ressources/3017_1.jpg) |![Carte micro SD (stockage)](consigne_ressources/e332550d-d71c-480d-9036-51bd7d6e0304.png) |![Câble HDMI (vidéo)](consigne_ressources/877fbf76-cc53-403e-83aa-905320301f39.png) |
+|![Câble Phidget HUB](consigne_ressources/3017_1.jpg) |![Carte micro SD (stockage)](consigne_ressources/e332550d-d71c-480d-9036-51bd7d6e0304.png) |![Câble HDMI (vidéo)](consigne_ressources/hdmi_cable.jpg) |
 
 |Phidget thumbstick (joystick) |Phidget son |Phidget lumière |
 |----|----|----|
