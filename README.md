@@ -255,49 +255,14 @@ Tu as besoin d’une manette pour jouer.
     ```bash
     sudo ~/server_setup.sh
     ```
-    
+    > Cette commande est très longue, tu peux réaliser le **point 6** pendant le temps d'exécution du script!
 
 Tu as téléchargé, rendu exécutable et exécuté un script linux. Ce dernier contient une liste de commandes et d’actions à exécuter automatiquement.
 
 Ce genre de script est utilisé pour gagner du temps lors de tâches répétitives, d’installations complexes ou pour de l’automatisation.
 
 Dans notre cas, il met en place les différents systèmes qui permettront de jouer à snake !
-
-### 6. Code par toi-même ! (A faire sur l'ordinateur)
-
-**Objectif :**
-
-Apprendre à créer un programme simple en blocs pour utiliser différents Phidgets.
-
-**Réalisation :**
-
-1. Connecte les Phidgets au HUB à l’aide des câbles fournis.
-2. Branche le Hub au Raspberry Pi à l’aide du câble USB.
-3. Ouvre le site [makecode.phidgets.com](https://makecode.phidgets.com/#).
-
-![{C74BB9BF-FC59-4B32-9092-52578A6422F7}.png](consigne_ressources/C74BB9BF-FC59-4B32-9092-52578A6422F7.png)
-
-1. Clique sur "Nouveau projet".
-2. Tu arrives ensuite sur la page suivante :
-
-![{35515E77-F1EB-4503-9154-7E489B299EC7}.png](consigne_ressources/35515E77-F1EB-4503-9154-7E489B299EC7.png)
-
-Ce programme permet de prendre en main les Phidgets et la création de petits programmes simples.
-
-Clique sur le bouton en bas à gauche pour connecter les Phidgets
-
-Tu peux t’amuser à composer toi-même ton programme.
-
-Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les utiliser, tu les glisses et les places sur la droite. Ces blocs remplacent les lignes de code. Ils permettent de découvrir l’univers du développement de façon ludique et instinctive.
-
-Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.
-
-[🎞️ Vidéo pour un exercice d'exemple](https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/ex_phidget.mp4)
-
-Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !
-
-
-### 6.2. Mise en place de l’affichage
+### 5.2. Mise en place de l’affichage
 
 Maintenant, ta manette est prête. Tu prépares l’affichage de ton jeu depuis ton poste de travail. Tu as besoin de quelques fichiers et tu fais les ajustements suivants.
 
@@ -318,7 +283,7 @@ Maintenant, ta manette est prête. Tu prépares l’affichage de ton jeu depuis 
 
 - Tu constates que, pour l’instant, le jeu n’est pas fonctionnel. Comme mentionné précédemment, l’affichage doit communiquer avec notre manette pour que le jeu fonctionne.  Tu dois modifier le code fournit en tenant compte des informations trouvées.
 
-### 6.3. Rendre ton jeu fonctionnel
+### 5.3. Rendre ton jeu fonctionnel
 
 Dans le point précédent, nous avons mentionné les différents fichiers utiles pour l’affichage. Un de ces fichiers est utilisé pour la communication avec la manette. Tu as peut-être deviné, il s'agit du fichier “script.js” ! 
 
@@ -372,6 +337,43 @@ Bien joué, ton jeu Snake est maintenant opérationnel !
 ![](https://images.unsplash.com/photo-1499233983070-99a5f004e720?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb)
 
 Si quelque chose ne fonctionne pas correctement ou que tu as des questions. N’hésite pas à t’adresser à l’accompagnant.
+
+
+### 6. Code par toi-même ! (A faire sur l'ordinateur)
+
+**Objectif :**
+
+Apprendre à créer un programme simple en blocs pour utiliser différents Phidgets.
+
+**Réalisation :**
+
+1. Connecte les Phidgets au HUB à l’aide des câbles fournis.
+2. Branche le Hub au Raspberry Pi à l’aide du câble USB.
+3. Ouvre le site [makecode.phidgets.com](https://makecode.phidgets.com/#).
+
+![{C74BB9BF-FC59-4B32-9092-52578A6422F7}.png](consigne_ressources/C74BB9BF-FC59-4B32-9092-52578A6422F7.png)
+
+1. Clique sur "Nouveau projet".
+2. Tu arrives ensuite sur la page suivante :
+
+![{35515E77-F1EB-4503-9154-7E489B299EC7}.png](consigne_ressources/35515E77-F1EB-4503-9154-7E489B299EC7.png)
+
+Ce programme permet de prendre en main les Phidgets et la création de petits programmes simples.
+
+Clique sur le bouton en bas à gauche pour connecter les Phidgets
+
+Tu peux t’amuser à composer toi-même ton programme.
+
+Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les utiliser, tu les glisses et les places sur la droite. Ces blocs remplacent les lignes de code. Ils permettent de découvrir l’univers du développement de façon ludique et instinctive.
+
+Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.
+
+[🎞️ Vidéo pour un exercice d'exemple](https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/ex_phidget.mp4)
+
+Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !
+
+
+
 
 ### 7. Challenges avec Scratch et Phidgets
 
