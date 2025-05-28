@@ -249,13 +249,13 @@ Tu as besoin d’une manette pour jouer.
         
     - Exécution
     
-    Après avoir exécuté la commande suivante, tu entres le mot de passe défini durant la configuration du Raspberry Pi et tu valides avec la touche [Enter] 
-    **Pour des raisons de sécurité,** il est normal que les caractères ne s’affichent pas lorsque tu écris le mot de passe.
+       Après avoir exécuté la commande suivante, tu entres le mot de passe défini durant la configuration du Raspberry Pi et tu valides avec la touche [Enter] 
+       **Pour des raisons de sécurité,** il est normal que les caractères ne s’affichent pas lorsque tu écris le mot de passe.
     
-    ```bash
-    sudo ~/server_setup.sh
-    ```
-    > Cette commande est très longue, tu peux réaliser le **point 6** pendant le temps d'exécution du script!
+       ```bash
+       sudo ~/server_setup.sh
+       ```
+       > Cette commande est très longue, tu peux réaliser le [**point 6**](https://github.com/emf-info/StageDecouverte/blob/main/README.md#6-code-par-toi-m%C3%AAme--a-faire-sur-lordinateur pendant le temps d'exécution du script!
 
 Tu as téléchargé, rendu exécutable et exécuté un script linux. Ce dernier contient une liste de commandes et d’actions à exécuter automatiquement.
 
