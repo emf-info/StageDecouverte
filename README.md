@@ -116,15 +116,16 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 
 - Branche-le également à un écran à l’aide du câble HDMI.
 
-![IMG_20250109_144747.jpg](consigne_ressources/IMG_20250109_144747.jpg)
+![rasp_hdmi.png](consigne_ressources/rasp_hdmi.png)
 
 - Vérifie que l’écriture et la vérification de la carte SD que tu as préparée soient bien terminées puis, insère la  carte dans le port prévu à cet effet sous l’appareil.
 
-![IMG_20250109_144848.jpg](consigne_ressources/4fff5117-2aa2-4daf-b5fe-2b0afacd24ea.png)
+![rasp_sd.png](consigne_ressources/rasp_sd.png)
 
 - Finalement, branche l’alimentation du Raspberry.
 
-![IMG_20250109_144952.jpg](consigne_ressources/IMG_20250109_144952.jpg)
+![rasp_usbc.png](consigne_ressources/rasp_usbc.png)
+![rasp_alim_courant.png](consigne_ressources/rasp_alim_courant.png)
 
 ---
 
