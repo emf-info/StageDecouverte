@@ -28,7 +28,7 @@ Bienvenue dans cet atelier où tu apprendras à utiliser un mini-ordinateur, le 
 
 |Raspberry Pi (mini ordinateur) |Switch (pour connecter plusieurs ordinateurs ensemble) |Câble réseau |
 |----|----|----|
-|![Raspberry Pi (mini ordinateur)](consigne_ressources/b77687c3-9fd1-453f-9889-43ff249f57a8.png) |![Switch (pour connecter plusieurs ordinateurs ensemble)](consigne_ressources/gs105.jpg) |![Câble réseau](consigne_ressources/63fefe9a-1f0c-409d-9d46-35eeba19c0ec.png) |
+|![Raspberry Pi (mini ordinateur)](consigne_ressources/b77687c3-9fd1-453f-9889-43ff249f57a8.png) |![Switch (pour connecter plusieurs ordinateurs ensemble)](consigne_ressources/gs105.jpg) |![Câble réseau](consigne_ressources/gs105.jpg) |
 
 |Câble pour Phidget |Phidget Hub (HUB0000_0) |Adaptateur SD vers USB |
 |----|----|----|
