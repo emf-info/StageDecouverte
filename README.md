@@ -96,7 +96,7 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 
 - Branche  l’alimentation à l’arrière du switch puis sur la prise de courant.
 
-![IMG_20250109_152731.jpg](consigne_ressources/265bec82-1f07-43ba-a822-6be488a9c1fe.png)
+![IMG_20250109_152731.jpg](consigne_ressources/switch_alim.png)
 
 - Branche un câble réseau entre le port n°1 du switch et la prise réseau mise à ta disposition (EMFNet).
 
