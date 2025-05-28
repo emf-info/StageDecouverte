@@ -94,11 +94,11 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 
 **Préparation du switch :**
 
-- Branche l'alimentation du switch NETGEAR à l’arrière du switch.
+- Branche l'alimentation à l’arrière du switch.
 
 ![switch_alim.png](consigne_ressources/switch_alim.png)
 
-- Branche l'alimentation du switch NETGEAR dans une prise courant
+- Branche l'alimentation dans une prise courant
 
 ![switch_courant.png](consigne_ressources/switch_courant.png)
 
@@ -112,9 +112,7 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 
 - Branche le périphérique USB (clavier, souris) avec le dongle USB.
 
-![IMG_20250109_144625.jpg](consigne_ressources/IMG_20250109_144625.jpg)
-
-![IMG_20250109_144646.jpg](consigne_ressources/IMG_20250109_144646.jpg)
+![rasp_dongle.jpg](consigne_ressources/rasp_dongle.png)
 
 - Branche-le également à un écran à l’aide du câble HDMI.
 
