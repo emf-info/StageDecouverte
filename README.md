@@ -292,7 +292,7 @@ Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les ut
 
 Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.
 
-<video src="consigne_ressources/ex_phidget.mp4" controls style="max-width: 100%;"></video>
+[<video src="https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/ex_phidget.mp4" controls style="max-width: 100%;"></video>](https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/ex_phidget.mp4)
 
 [🎞️ Vidéo pour un exercice d'exemple](consigne_ressources/video.html)
 
