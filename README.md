@@ -156,7 +156,7 @@ Maintenant, découvre comment se déroule la configuration initiale d’un syst�
 
 ![image2.png](consigne_ressources/image2.png)
 
-- Maintenant, tu crées un nouvel utilisateur. Il faut choisir un nom et un mot de passe. Pour cet exercice, tu nommes ton utilisateur “stage” et son mot de passe est “Pa$$w0rd”. Tu saisis le nom dans le premier champ et tu saisis le même mot de passe dans les deux derniers champs de texte.
+- Maintenant, tu crées un nouvel utilisateur. Il faut choisir un nom et un mot de passe. Pour cet exercice, tu nommes ton utilisateur `stage` et son mot de passe est `Pa$$w0rd`. Tu saisis le nom dans le premier champ et tu saisis le même mot de passe dans les deux derniers champs de texte.
 
 ![user.png](consigne_ressources/user.png)
 
