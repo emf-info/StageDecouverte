@@ -206,7 +206,7 @@ Afin de bien comprendre l’importance de cette étape, tu réaliseras divers te
     
     Cette commande teste si ton ordinateur peut communiquer avec le site de Google. Elle envoie des messages (paquet réseau) pour vérifier la connexion. En retour, elle t’affiche si Google répond ainsi que le temps que ça prend.
     
-- Tu lies maintenant le Raspberry Pi à l’équipement réseau. Adresse-toi au professeur présent dans la salle pour récupérer un deuxième câble réseau. Ensuite, tu le branches sur le port n°2 du switch et l’unique port réseau du Raspberry Pi.
+- Tu lies maintenant le Raspberry Pi à l’équipement réseau. Utilise le cable bleu. Tu le branches sur le port n°2 du switch et l’unique port réseau du Raspberry Pi.
 
 ![switch_rasp_r.png](consigne_ressources/switch_rasp_r.png)
 
