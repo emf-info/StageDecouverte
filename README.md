@@ -410,13 +410,13 @@ Et finalement, il y a deux boutons qui te permettent de lancer et de stoper le p
     
     Télécharge le programme suivant : 
     
-    [Challenge_1.sb3](consigne_ressources/Challenge_1.sb3)
+    [Challenge_1.sb3](https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/Challenge_1.sb3)
     
     Recopie le code suivant :
     
     ![image.png](consigne_ressources/image%2017.png)
     
-2. **Challenge 2 : Mouvements avec le joystick**
+1. **Challenge 2 : Mouvements avec le joystick**
     
     Utilise le capteur **thumbstick** pour déplacer le poisson horizontalement et verticalement.
     
@@ -424,11 +424,11 @@ Et finalement, il y a deux boutons qui te permettent de lancer et de stoper le p
     
     Télécharge le programme suivant : 
     
-    [Challenge_2.sb3](consigne_ressources/Challenge_2.sb3)
+    [Challenge_2.sb3](https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/Challenge_2.sb3)
     
     Pas d’exemple de code pour cet exercice, essaie par toi-meme !
     
-3. **Challenge 3 : Changement de taille avec le slider**
+2. **Challenge 3 : Changement de taille avec le slider**
     
     Utilise le capteur **slider** pour modifier la taille de Scratch.
     
@@ -436,11 +436,11 @@ Et finalement, il y a deux boutons qui te permettent de lancer et de stoper le p
     
     Télécharge le programme suivant : 
     
-    [Challenge_3.sb3](consigne_ressources/Challenge_3.sb3)
+    [Challenge_3.sb3](https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/Challenge_3.sb3)
     
     Pas d’exemple de code pour cet exercice, essaie par toi-meme !
     
-4. **Challenge 4 : Musique avec la distance**
+3. **Challenge 4 : Musique avec la distance**
     
     Utilise le capteur de **distance** pour jouer de la musique.
     
@@ -448,11 +448,11 @@ Et finalement, il y a deux boutons qui te permettent de lancer et de stoper le p
     
     Télécharge le programme suivant : 
     
-    [Challenge_4.sb3](consigne_ressources/Challenge_4.sb3)
+    [Challenge_4.sb3](https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/Challenge_4.sb3)
     
     Pas d’exemple de code pour cet exercice, essaie par toi-meme !
     
-5. **Challenge 5 : Interaction avec le capteur sonore**
+4. **Challenge 5 : Interaction avec le capteur sonore**
     
     Utilise le capteur **sound** pour modifier le fond en faisant du bruit.
     
@@ -460,9 +460,7 @@ Et finalement, il y a deux boutons qui te permettent de lancer et de stoper le p
     
     Télécharge le programme suivant : 
     
-    [Challenge_5.sb3](consigne_ressources/Challenge_5.sb3)
+    [Challenge_5.sb3](https://github.com/emf-info/StageDecouverte/raw/refs/heads/main/consigne_ressources/Challenge_5.sb3)
     
     Pas d’exemple de code pour cet exercice, essaie par toi-meme !
-    
-
 ---
