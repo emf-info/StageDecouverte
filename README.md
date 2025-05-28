@@ -94,13 +94,17 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 
 **Préparation du switch :**
 
-- Branche  l’alimentation à l’arrière du switch puis sur la prise de courant.
+- Branche l'alimentation à l’arrière du switch.
 
-![IMG_20250109_152731.jpg](consigne_ressources/switch_alim.png)
+![switch_alim.png](consigne_ressources/switch_alim.png)
+
+- Branche l'alimentation dans une prise courant
+
+![switch_courant.png](consigne_ressources/switch_courant.png)
 
 - Branche un câble réseau entre le port n°1 du switch et la prise réseau mise à ta disposition (EMFNet).
 
-![IMG_20250109_145124.jpg](consigne_ressources/switch_port1.png)
+![switch_port1.png](consigne_ressources/switch_port1.png)
 
 **Préparation du Raspberry Pi :**
 
