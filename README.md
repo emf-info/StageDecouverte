@@ -208,9 +208,9 @@ Afin de bien comprendre l’importance de cette étape, tu réaliseras divers te
     
 - Tu lies maintenant le Raspberry Pi à l’équipement réseau. Adresse-toi au professeur présent dans la salle pour récupérer un deuxième câble réseau. Ensuite, tu le branches sur le port n°2 du switch et l’unique port réseau du Raspberry Pi.
 
-![IMG_20250109_145113.jpg](consigne_ressources/IMG_20250109_145113.jpg)
+![switch_rasp_r.png](consigne_ressources/switch_rasp_r.png)
 
-![IMG_20250109_145043.jpg](consigne_ressources/IMG_20250109_145043.jpg)
+![switch_rasp_s.png](consigne_ressources/switch_rasp_s.png)
 
 - Maintenant, tu vérifies à nouveau la connexion avec les deux méthodes mentionnées précédemment. La connexion à Internet est établie, les tests doivent se passer sans problème.
 
