@@ -187,7 +187,7 @@ Afin de bien comprendre l’importance de cette étape, tu réaliseras divers te
 **Réalisation :**
 
 - Tu vérifies d'abord l’accès à Internet. Comme tu n’as rien configuré, il est normal que cela ne fonctionne pas.
-    - Pour tester, ouvre le navigateur et effectue une recherche quelconque.
+    - Pour tester, ouvre le navigateur et effectue une recherche sur `www.google.com`.
     - Tu peux aussi ouvrir l’invité de commande linux et exécuter une commande de test ping comme ci-dessous. Il suffit de recopier la commande et de l’exécuter en appuyant sur la touche [Enter].
     
     ![terminal.png](consigne_ressources/terminal.png)
@@ -210,44 +210,7 @@ Afin de bien comprendre l’importance de cette étape, tu réaliseras divers te
 
 ---
 
-### 5. Code par toi-même ! (A faire sur l'ordinateur)
-
-**Objectif :**
-
-Apprendre à créer un programme simple en blocs pour utiliser différents Phidgets.
-
-**Réalisation :**
-
-1. Connecte les Phidgets au HUB à l’aide des câbles fournis.
-2. Branche le Hub au Raspberry Pi à l’aide du câble USB.
-3. Ouvre le site [makecode.phidgets.com](https://makecode.phidgets.com/#).
-
-![{C74BB9BF-FC59-4B32-9092-52578A6422F7}.png](consigne_ressources/C74BB9BF-FC59-4B32-9092-52578A6422F7.png)
-
-1. Clique sur "Nouveau projet".
-2. Tu arrives ensuite sur la page suivante :
-
-![{35515E77-F1EB-4503-9154-7E489B299EC7}.png](consigne_ressources/35515E77-F1EB-4503-9154-7E489B299EC7.png)
-
-Ce programme permet de prendre en main les Phidgets et la création de petits programmes simples.
-
-Clique sur le bouton en bas à gauche pour connecter les Phidgets
-
-Tu peux t’amuser à composer toi-même ton programme.
-
-Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les utiliser, tu les glisses et les places sur la droite. Ces blocs remplacent les lignes de code. Ils permettent de découvrir l’univers du développement de façon ludique et instinctive.
-
-Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.
-
-<video src="consigne_ressources/ex_phidget.mp4" controls style="max-width: 100%;"></video>
-
-[🎞️ Vidéo pour un exercice d'exemple](consigne_ressources/ex_phidget.mp4)
-
-
-
-Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !
-
-### 6. Code ton Jeu du “snake” avec ta propre manette
+### 5. Code ton Jeu du “snake” avec ta propre manette
 
 ![image.png](consigne_ressources/eea168a6-5964-40e4-b11e-b30f79640f61.png)
 
@@ -263,7 +226,7 @@ Tu finalises ton installation afin de faire fonctionner le jeu correctement. Tu 
 
 ![Dessin.png](consigne_ressources/Dessin.png)
 
-### 6.1. Préparation de la manette (sur le Raspberry Pi)
+### 5.1. Préparation de la manette (sur le Raspberry Pi)
 
 Tu as besoin d’une manette pour jouer.
 
@@ -299,6 +262,42 @@ Tu as téléchargé, rendu exécutable et exécuté un script linux. Ce dernier 
 Ce genre de script est utilisé pour gagner du temps lors de tâches répétitives, d’installations complexes ou pour de l’automatisation.
 
 Dans notre cas, il met en place les différents systèmes qui permettront de jouer à snake !
+
+### 6. Code par toi-même ! (A faire sur l'ordinateur)
+
+**Objectif :**
+
+Apprendre à créer un programme simple en blocs pour utiliser différents Phidgets.
+
+**Réalisation :**
+
+1. Connecte les Phidgets au HUB à l’aide des câbles fournis.
+2. Branche le Hub au Raspberry Pi à l’aide du câble USB.
+3. Ouvre le site [makecode.phidgets.com](https://makecode.phidgets.com/#).
+
+![{C74BB9BF-FC59-4B32-9092-52578A6422F7}.png](consigne_ressources/C74BB9BF-FC59-4B32-9092-52578A6422F7.png)
+
+1. Clique sur "Nouveau projet".
+2. Tu arrives ensuite sur la page suivante :
+
+![{35515E77-F1EB-4503-9154-7E489B299EC7}.png](consigne_ressources/35515E77-F1EB-4503-9154-7E489B299EC7.png)
+
+Ce programme permet de prendre en main les Phidgets et la création de petits programmes simples.
+
+Clique sur le bouton en bas à gauche pour connecter les Phidgets
+
+Tu peux t’amuser à composer toi-même ton programme.
+
+Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les utiliser, tu les glisses et les places sur la droite. Ces blocs remplacent les lignes de code. Ils permettent de découvrir l’univers du développement de façon ludique et instinctive.
+
+Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.
+
+<video src="consigne_ressources/ex_phidget.mp4" controls style="max-width: 100%;"></video>
+
+[🎞️ Vidéo pour un exercice d'exemple](consigne_ressources/ex_phidget.mp4)
+
+Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !
+
 
 ### 6.2. Mise en place de l’affichage
 
