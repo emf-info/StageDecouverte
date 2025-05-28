@@ -94,17 +94,19 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 
 **Préparation du switch :**
 
-- Branche l'alimentation à l’arrière du switch.
+- Branche l'alimentation du switch NETGEAR à l’arrière du switch.
 
 ![switch_alim.png](consigne_ressources/switch_alim.png)
 
-- Branche l'alimentation dans une prise courant
+- Branche l'alimentation du switch NETGEAR dans une prise courant
 
 ![switch_courant.png](consigne_ressources/switch_courant.png)
 
 - Branche un câble réseau entre le port n°1 du switch et la prise réseau mise à ta disposition (EMFNet).
 
 ![switch_port1.png](consigne_ressources/switch_port1.png)
+
+![cable_emfnet.png](consigne_ressources/cable_emfnet.png)
 
 **Préparation du Raspberry Pi :**
 
