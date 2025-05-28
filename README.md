@@ -48,6 +48,12 @@ Bienvenue dans cet atelier où tu apprendras à utiliser un mini-ordinateur, le 
 
 ---
 
+## 🚀 Prêt à coder et explorer ?
+
+L’informatique, c’est comme une aventure pleine de mystères ! En suivant ces étapes, tu vas découvrir ce qu’un informaticien fait au quotidien. Qui sait, peut-être que tu deviendras le prochain génie des systèmes ou un développeur star !
+
+Alors, prêt à relever le défi ? 🎉
+
 ## 🛀 Les étapes de l’aventure
 
 ### 1. Préparation de la carte SD
@@ -372,9 +378,6 @@ Pour te faire une idée, visualise la vidéo d’exemple. On réalise un program
 
 Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes de créer toi-même un programme. Tu as également d’autres Phidgets à disposition pour t’amuser et inventer… A toi de jouer !
 
-
-
-
 ### 7. Challenges avec Scratch et Phidgets
 
 Voici quelques challenges que tu peux effectuer avec les phidgets. On utilise le site scratch qui permet de créer des petits programmes simplement avec des bloques comme tu l’a fait durant l’exercice 5.
@@ -463,9 +466,3 @@ Et finalement, il y a deux boutons qui te permettent de lancer et de stoper le p
     
 
 ---
-
-## 🚀 Prêt à coder et explorer ?
-
-L’informatique, c’est comme une aventure pleine de mystères ! En suivant ces étapes, tu vas découvrir ce qu’un informaticien fait au quotidien. Qui sait, peut-être que tu deviendras le prochain génie des systèmes ou un développeur star !
-
-Alors, prêt à relever le défi ? 🎉
