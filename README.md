@@ -117,6 +117,7 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 - Branche-le également à un écran à l’aide du câble HDMI.
 
 ![rasp_hdmi.png](consigne_ressources/rasp_hdmi.png)
+![rasp_hdmi_ecran.png](consigne_ressources/rasp_hdmi_ecran.png)
 
 - Vérifie que l’écriture et la vérification de la carte SD que tu as préparée soient bien terminées puis, insère la  carte dans le port prévu à cet effet sous l’appareil.
 
