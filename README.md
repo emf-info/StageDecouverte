@@ -174,7 +174,7 @@ Maintenant, découvre comment se déroule la configuration initiale d’un syst�
 
 ![image.png](consigne_ressources/image%2013.png)
 
-- Tu a atteint la fin de cette configuration de base, tu redémarres l’appareil afin que les paramètres choisis s’appliquent correctement.
+- Tu as atteint la fin de cette configuration de base, tu redémarres l’appareil afin que les paramètres choisis s’appliquent correctement.
 
 ![image.png](consigne_ressources/image%2014.png)
 
@@ -283,7 +283,7 @@ Maintenant, ta manette est prête. Tu prépares l’affichage de ton jeu depuis 
 
 ![{6D0DD684-DC00-4105-BD21-68B6FD4F6C19}.png](consigne_ressources/6D0DD684-DC00-4105-BD21-68B6FD4F6C19.png)
 
-- Pour visualiser, tu double cliques sur le fichier “index.html”. Une page Internet doit s'ouvrir.
+- Pour visualiser, tu double-cliques sur le fichier “index.html”. Une page Internet doit s'ouvrir.
 
 ![{40035457-8722-4137-87B0-95074D62BAC2}.png](consigne_ressources/40035457-8722-4137-87B0-95074D62BAC2.png)
 
@@ -370,7 +370,7 @@ Clique sur le bouton en bas à gauche pour connecter les Phidgets
 
 Tu peux t’amuser à composer toi-même ton programme.
 
-Des blocs d’action sont à disposition dans le menu sur la gauche. Pour les utiliser, tu les glisses et les places sur la droite. Ces blocs remplacent les lignes de code. Ils permettent de découvrir l’univers du développement de façon ludique et instinctive.
+Des blocs d’actions sont à disposition dans le menu sur la gauche. Pour les utiliser, tu les glisses et les places sur la droite. Ces blocs remplacent les lignes de code. Ils permettent de découvrir l’univers du développement de façon ludique et instinctive.
 
 Pour te faire une idée, visualise la vidéo d’exemple. On réalise un programme qui affiche la température actuelle mais uniquement si le slider est à 100%.
 
@@ -380,25 +380,25 @@ Tu as découvert comment cela fonctionne. Si tu te sens à l’aise, tu essayes 
 
 ### 7. Challenges avec Scratch et Phidgets
 
-Voici quelques challenges que tu peux effectuer avec les phidgets. On utilise le site scratch qui permet de créer des petits programmes simplement avec des bloques comme tu l’a fait durant l’exercice 5.
+Voici quelques challenges que tu peux effectuer avec les phidgets. On utilise le site scratch qui permet de créer des petits programmes simplement avec des blocs comme tu l’a fait durant l’exercice 5.
 
 Ouvre scratch sur l’ordinateur à l’adresse suivante : [http://phidgets.com/education/scratch](http://phidgets.com/education/scratch)
 
-Pour tous les challenges, tu aura besoins du HUB, du cable USB et des cables pour les phidgets. Les phidgets a utiliser sont précisés pour chaque exercice.
+Pour tous les challenges, tu as besoin du HUB, du câble USB et des câbles pour les phidgets. Les phidgets à utiliser sont précisés pour chaque exercice.
 
-Pour te simplifier la tache, pour chaque challenge tu auras un fichier qui contiens la base de chaque programme. Pour utiliser cette base, tu dois la télécharger, puis l’importer dans scratch :
+Pour simplifier la tâche, pour chaque challenge tu as un fichier qui contient la base de chaque programme. Pour utiliser cette base, tu dois la télécharger, puis l’importer dans scratch :
 
 ![{E380A225-245C-4EBB-A6C1-A9491CEE5B51}.png](consigne_ressources/E380A225-245C-4EBB-A6C1-A9491CEE5B51.png)
 
-Et tu sélectionne le fichier que tu viens de télécharger.
+Et tu sélectionnes le fichier que tu viens de télécharger.
 
-Il te faut également importer les blocs de code des phidgets :
+Il faut également importer les blocs de codes des phidgets :
 
 ![{4CA0D872-DCEC-43A4-BC02-B29F3D0D5D9F}.png](consigne_ressources/4CA0D872-DCEC-43A4-BC02-B29F3D0D5D9F.png)
 
 ![{7BDABE97-210C-4EC6-8025-D15DACEE492A}.png](consigne_ressources/7BDABE97-210C-4EC6-8025-D15DACEE492A.png)
 
-Et finalement, il y a deux boutons qui te permettent de lancer et de stoper le programme :
+Et finalement, il y a deux boutons qui permettent de lancer et de stopper le programme :
 
 ![image.png](consigne_ressources/image%2015.png)
 
