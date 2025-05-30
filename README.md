@@ -287,7 +287,7 @@ Maintenant, ta manette est prête. Tu prépares l’affichage de ton jeu depuis 
 
 ![{40035457-8722-4137-87B0-95074D62BAC2}.png](consigne_ressources/40035457-8722-4137-87B0-95074D62BAC2.png)
 
-- Tu constates que, pour l’instant, le jeu n’est pas fonctionnel. Comme mentionné précédemment, l’affichage doit communiquer avec notre manette pour que le jeu fonctionne.  Tu dois modifier le code fournit en tenant compte des informations trouvées.
+- Tu constates que, pour l’instant, le jeu n’est pas fonctionnel. Comme mentionné précédemment, l’affichage doit communiquer avec notre manette pour que le jeu fonctionne.  Tu dois modifier le code fourni en tenant compte des informations trouvées.
 
 ### 5.3. Rendre ton jeu fonctionnel
 
