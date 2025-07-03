@@ -56,6 +56,21 @@ Alors, prêt à relever le défi ? 🎉
 
 ## 🛀 Les étapes de l’aventure
 
+### 0. Préparation de ton environnement
+
+Avant de démarrer ton travail, tu dois déjà connecter ton ordinateur au réseau pour avoir accès à Internet. Pour cela, tu auras besoin du switch.
+
+- Branche l'alimentation à l’arrière du switch.
+![switch_alim.png](consigne_ressources/switch_alim.png)
+
+- Branche l'alimentation dans une prise courant
+![switch_courant.png](consigne_ressources/switch_courant.png)
+
+- Branche le câble réseau qui se trouve devant toi au port n°1 du switch.
+![sd_usb1.png](consigne_ressources/Prise_Firmeca.png)
+
+- Branche un câble réseau entre le port n°2 du switch et l'ordinateur
+
 ### 1. Préparation de la carte SD
 
 La première étape de votre travail consiste à préparer une carte SD pour accueillir le système d’exploitation Raspberry Pi OS.
@@ -99,22 +114,6 @@ Cette seconde étape te permet d’alimenter, connecter et rendre utilisable les
 
 - Reconnaître les différents appareils et câbles
 - Comprendre l'importance du réseau dans l'informatique.
-
-**Préparation du switch :**
-
-- Branche l'alimentation à l’arrière du switch.
-
-![switch_alim.png](consigne_ressources/switch_alim.png)
-
-- Branche l'alimentation dans une prise courant
-
-![switch_courant.png](consigne_ressources/switch_courant.png)
-
-- Branche un câble réseau entre le port n°1 du switch et la prise réseau mise à ta disposition (EMFNet).
-
-![switch_port1.png](consigne_ressources/switch_port1.png)
-
-![cable_emfnet.png](consigne_ressources/cable_emfnet.png)
 
 **Préparation du Raspberry Pi :**
 
@@ -206,11 +205,11 @@ Afin de bien comprendre l’importance de cette étape, tu réaliseras divers te
     
     Cette commande teste si ton ordinateur peut communiquer avec le site de Google. Elle envoie des messages (paquet réseau) pour vérifier la connexion. En retour, elle t’affiche si Google répond ainsi que le temps que ça prend.
     
-- Tu lies maintenant le Raspberry Pi à l’équipement réseau. Utilise le cable bleu. Tu le branches sur le port n°2 du switch et l’unique port réseau du Raspberry Pi.
+- Tu lies maintenant le Raspberry Pi à l’équipement réseau. Utilise le cable bleu. Tu le branches sur le port n°3 du switch et l’unique port réseau du Raspberry Pi.
 
 ![switch_rasp_r.png](consigne_ressources/switch_rasp_r.png)
 
-![switch_rasp_s.png](consigne_ressources/switch_rasp_s.png)
+![Switch_Frimeca.png](consigne_ressources/Switch_Frimeca.png)
 
 - Maintenant, tu vérifies à nouveau la connexion avec les deux méthodes mentionnées précédemment. La connexion à Internet est établie, les tests doivent se passer sans problème.
 
@@ -320,7 +319,7 @@ Tu dois obtenir un résultat comme celui-ci :
        valid_lft forever preferred_lft forever
 ```
 
-Il y a beaucoup d’informations mais c’est la suite de numéros en rouge qui nous intéresse. Prends en note pour modifier le code.
+Il y a beaucoup d’informations mais c’est la suite de numéros entourée des étoiles qui nous intéresse (**XXX.XXX.XXX.XXX**). Prends en note pour modifier le code.
 
 Tu peux retourner sur ton poste de travail pour modifier l’affichage.
 
@@ -354,7 +353,7 @@ Apprendre à créer un programme simple en blocs pour utiliser différents Phidg
 **Réalisation :**
 
 1. Connecte les Phidgets au HUB à l’aide des câbles fournis.
-2. Branche le Hub au Raspberry Pi à l’aide du câble USB.
+2. Branche le Hub à l'ordinateur à l’aide du câble USB.
 3. Ouvre le site [makecode.phidgets.com](https://makecode.phidgets.com/#).
 
 ![{C74BB9BF-FC59-4B32-9092-52578A6422F7}.png](consigne_ressources/C74BB9BF-FC59-4B32-9092-52578A6422F7.png)
